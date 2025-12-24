@@ -167,7 +167,7 @@
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center px-10 text-white">
           <h2 class="text-5xl font-semibold mb-4  px-3 py-1 inline-block">
-           Contact form
+           Donation form
           </h2>
           <nav aria-label="Breadcrumb">
           <ol class="flex items-center space-x-2 text-sm sm:text-base">
@@ -178,7 +178,7 @@
             </li>
             <li class="text-gray-300">/</li>
             <li class="text-orange-500 font-semibold">
-              Contact
+             Donation
             </li>
           </ol>
         </nav>
@@ -186,46 +186,67 @@
       </div>
     </div>
   </div>
-   <!-- contactus -->
-  <div class="max-w-4xl mx-auto px-4 mt-5">
-    <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold uppercase mb-2">Contact Us</h2>
-      <div class="w-16 h-1 bg-orange-500 mx-auto"></div>
-    </div>
-    <div class="bg-white shadow-md rounded-lg p-6">
-      <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="relative">
-          <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="text" placeholder="Your Name" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500" required />
-        </div>
-        <div class="relative">
-          <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="email" placeholder="Your Email" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500" required />
-        </div>
-        <div class="relative md:col-span-2">
-          <i class="fas fa-tag absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="text" placeholder="Subject" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500" required />
-        </div>
-        <div class="relative md:col-span-2">
-          <i class="fas fa-comment absolute left-4 top-4 text-gray-400"></i>
-          <textarea rows="4" placeholder="Your Message" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500 resize-none" required></textarea>
-        </div>
-        <div class="md:col-span-2 text-center">
-          <button type="submit"
-            class="bg-orange-500 text-white px-10 py-2.5 rounded font-semibold uppercase hover:bg-orange-600 transition">
-            Send Message
-          </button>
-        </div>
-      </form>
-      <p id="successMsg" class="text-green-600 font-semibold text-center mt-4 hidden">
-        Your message has been sent successfully!
-      </p>
-    </div>
+  <!-- form -->
+    <div class="max-w-sm mx-auto px-4 py-4">
+  
+  <div id="donateFormWrapper">
+    <h2 class="text-lg font-semibold text-center mb-3">
+      Make a Donation
+    </h2>
+
+    <form id="donateForm" class="space-y-3">
+
+      <input
+        type="text"
+        placeholder="Full Name"
+        required
+        class="w-full border rounded-md px-3 py-2 text-sm focus:ring-1 focus:ring-orange-500"
+      />
+
+      <input
+        type="email"
+        placeholder="Email Address"
+        required
+        class="w-full border rounded-md px-3 py-2 text-sm focus:ring-1 focus:ring-orange-500"
+      />
+
+      <input
+        type="number"
+        placeholder="Amount ($)"
+        required
+        class="w-full border rounded-md px-3 py-2 text-sm focus:ring-1 focus:ring-orange-500"
+      />
+
+      <button
+        type="submit"
+        class="w-full bg-orange-500 text-white py-2 text-sm rounded-full font-semibold hover:bg-orange-600 transition"
+      >
+        Donate Now
+      </button>
+    </form>
   </div>
+
+  <!-- Success Message -->
+  <div id="successMessage" class="hidden text-center py-6">
+    <div class="text-green-500 text-4xl mb-2">
+      <i class="fa-solid fa-check"></i>
+    </div>
+    <h3 class="text-lg font-semibold mb-1">Thank You!</h3>
+    <p class="text-gray-600 text-sm mb-3">
+      Your donation was successful.
+    </p>
+    <button
+      id="closeSuccess"
+      class="bg-orange-500 text-white px-5 py-2 text-sm rounded-full hover:bg-orange-600"
+    >
+      Close
+    </button>
+  </div>
+
+</div>
+
+
+  
   <!-- footer -->
   <footer class="bg-gradient-to-b from-slate-900 to-slate-800 text-gray-400">
     <div class="max-w-7xl mx-auto px-6 py-16">

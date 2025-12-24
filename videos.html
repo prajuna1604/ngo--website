@@ -14,16 +14,15 @@
 <body>
   <header class="font-poppins">
     <!-- top header -->
-    <div class="bg-white border-b">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="bg-white border-b h-20 hidden md:block">
+      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
         <div class="flex items-center space-x-2">
           <div class="text-primary text-3xl"></div>
           <div>
-            <img src="" alt="logo">
+            <img src="" class="" alt="logo">
             <h1 class="text-xl font-bold">
               HopeFor<span class="text-orange-600 font-bold">All</span>
             </h1>
-
           </div>
         </div>
         <div class="hidden md:flex items-center space-x-8">
@@ -54,9 +53,9 @@
       </div>
     </div>
     <!-- ================= NAVBAR ================= -->
-    <nav class="bg-[#262f36] text-white font-Manrope text-xl border-b-4 border-orange-600 relative z-40">
-      <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
-        <ul class="flex space-x-10 text-sm font-semibold mt-3">
+    <nav class="bg-[#262f36] text-white font-Manrope text-xl border-b-4 border-orange-600 relative z-40 ">
+      <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-6 md:h-14">
+        <ul class="hidden md:flex space-x-10 text-sm font-semibold md:mt-5 ">
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">HOME</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
@@ -64,6 +63,8 @@
                    transition-all duration-200 z-50">
               <li><a href="home1.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 1</a></li>
               <li><a href="home2.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 2</a></li>
+              <li><a href="home3.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 3</a></li>
+              <li><a href="home4.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 4</a></li>
             </ul>
           </li>
 
@@ -83,7 +84,7 @@
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
-              <li><a href="misssion.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Our
+              <li><a href="mission.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Our
                   Mission</a></li>
               <li><a href="team.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Team</a></li>
             </ul>
@@ -93,8 +94,9 @@
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
-              <li><a href="upcoming" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Upcoming</a></li>
-              <li><a href="past" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Past</a></li>
+              <li><a href="upcoming.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Upcoming</a>
+              </li>
+              <li><a href="past.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Past</a></li>
             </ul>
           </li>
           <li class="relative group">
@@ -116,7 +118,6 @@
               <li><a href="videos" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Videos</a></li>
             </ul>
           </li>
-
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">PAGES</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
@@ -126,7 +127,6 @@
               <li><a href="faq" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">FAQ</a></li>
             </ul>
           </li>
-
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">BLOG</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
@@ -136,20 +136,18 @@
               <li><a href="news" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">News</a></li>
             </ul>
           </li>
-
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">CONTACT</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
-              <li><a href="contactform" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Contact
+              <li><a href="contactform.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Contact
                   Form</a></li>
-              <li><a href="location.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Location</a></li>
+              <li><a href="location.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Location</a>
+              </li>
             </ul>
           </li>
-
         </ul>
-        <!-- SEARCH -->
         <div class="relative hidden md:block">
           <input type="text" placeholder="Search..." class="bg-[#262f36] text-white px-4 py-3 focus:outline-none " />
           <span class="absolute right-3 top-1/2 -translate-y-1/2">
@@ -157,78 +155,227 @@
           </span>
         </div>
       </div>
-    </nav>
-  </header>
-  <!-- banner -->
-   <div class="relative  max-w-7px container-fluid mx-auto  h-[520px] overflow-hidden">
-    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-      <div class="relative w-full h-[520px] flex-shrink-0">
-        <img src="images/banner5.webp" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-black/40"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center px-10 text-white">
-          <h2 class="text-5xl font-semibold mb-4  px-3 py-1 inline-block">
-           Contact form
-          </h2>
-          <nav aria-label="Breadcrumb">
-          <ol class="flex items-center space-x-2 text-sm sm:text-base">
-            <li>
-              <a href="home1.html" class="hover:text-orange-500 transition">
-                Home
-              </a>
-            </li>
-            <li class="text-gray-300">/</li>
-            <li class="text-orange-500 font-semibold">
-              Contact
-            </li>
-          </ol>
-        </nav>
+      <!-- mobilemenu -->
+      <div class="wrapper flex item-center justify-between  md:hidden">
+        <div>
+          <!-- <img src="" class="h-4 w-4" alt="logo"> -->
+          <h1 class="text-xl font-bold ml-4">
+            HopeFor<span class="text-orange-600 font-bold ">All</span>
+          </h1>
+        </div>
+        <div class="flex justify-end mr-4">
+          <div class="sm:hidden flex items-center px-1 py-4 cursor-pointer" id="mobile-menu-button">
+            <i class="fa-solid fa-bars fa-lg text-white"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-   <!-- contactus -->
-  <div class="max-w-4xl mx-auto px-4 mt-5">
-    <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold uppercase mb-2">Contact Us</h2>
-      <div class="w-16 h-1 bg-orange-500 mx-auto"></div>
-    </div>
-    <div class="bg-white shadow-md rounded-lg p-6">
-      <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="relative">
-          <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="text" placeholder="Your Name" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500" required />
-        </div>
-        <div class="relative">
-          <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="email" placeholder="Your Email" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500" required />
-        </div>
-        <div class="relative md:col-span-2">
-          <i class="fas fa-tag absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="text" placeholder="Subject" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500" required />
-        </div>
-        <div class="relative md:col-span-2">
-          <i class="fas fa-comment absolute left-4 top-4 text-gray-400"></i>
-          <textarea rows="4" placeholder="Your Message" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded
-               focus:outline-none focus:border-orange-500 resize-none" required></textarea>
-        </div>
-        <div class="md:col-span-2 text-center">
-          <button type="submit"
-            class="bg-orange-500 text-white px-10 py-2.5 rounded font-semibold uppercase hover:bg-orange-600 transition">
-            Send Message
-          </button>
-        </div>
-      </form>
-      <p id="successMsg" class="text-green-600 font-semibold text-center mt-4 hidden">
-        Your message has been sent successfully!
+      <div id="mobile-menu"
+        class="hidden md:hidden absolute top-14 left-0 w-full bg-[#262f36] text-white shadow-lg z-50">
+        <ul class="flex flex-col divide-y divide-gray-700">
+          <li>
+            <a href="#home" class="block px-6 py-4 hover:bg-orange-600">Home</a>
+          </li>
+          <li>
+            <a href="#causes" class="block px-6 py-4 hover:bg-orange-600">Causes</a>
+          </li>
+          <li>
+            <a href="#about" class="block px-6 py-4 hover:bg-orange-600">About Us</a>
+          </li>
+          <li>
+            <a href="#events" class="block px-6 py-4 hover:bg-orange-600">Events</a>
+          </li>
+          <li>
+            <a href="#volunteer" class="block px-6 py-4 hover:bg-orange-600">Volunteer</a>
+          </li>
+          <li>
+            <a href="#gallery" class="block px-6 py-4 hover:bg-orange-600">Gallery</a>
+          </li>
+          <li>
+            <a href="#pages" class="block px-6 py-4 hover:bg-orange-600">Pages</a>
+          </li>
+          <li>
+            <a href="#blog" class="block px-6 py-4 hover:bg-orange-600">Blog</a>
+          </li>
+          <li>
+            <a href="#contact" class="block px-6 py-4 hover:bg-orange-600">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+<section id="videos" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold uppercase">Our Videos</h2>
+      <div class="w-20 h-1 bg-orange-600 mx-auto mt-3"></div>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Watch how your support is changing lives and creating a brighter future.
       </p>
     </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/9FJPOaVHT3Q"
+            title="Helping Children"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Helping Children Grow</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Providing education, food, and care to children in need.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/I0t0tQ1Wk4A"
+            title="Education Support"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Education Support</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Empowering children through quality education.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/5rRrK7hG5gE"
+            title="Community Care"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Community Care</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Supporting families and communities in need.
+          </p>
+        </div>
+      </div>
+       <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/9FJPOaVHT3Q"
+            title="Helping Children"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Helping Children Grow</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Providing education, food, and care to children in need.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/I0t0tQ1Wk4A"
+            title="Education Support"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Education Support</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Empowering children through quality education.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/5rRrK7hG5gE"
+            title="Community Care"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Community Care</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Supporting families and communities in need.
+          </p>
+        </div>
+      </div>
+       <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/9FJPOaVHT3Q"
+            title="Helping Children"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Helping Children Grow</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Providing education, food, and care to children in need.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/I0t0tQ1Wk4A"
+            title="Education Support"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Education Support</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Empowering children through quality education.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/5rRrK7hG5gE"
+            title="Community Care"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Community Care</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Supporting families and communities in need.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
+</section>
   <!-- footer -->
   <footer class="bg-gradient-to-b from-slate-900 to-slate-800 text-gray-400">
-    <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="container mx-auto px-6 py-16">
       <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <h3 class="text-white font-semibold mb-4">ABOUT US</h3>
@@ -386,7 +533,6 @@
 
     </div>
   </div>
-
   <script src="main.js"></script>
 </body>
 

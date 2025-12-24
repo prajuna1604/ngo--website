@@ -49,7 +49,7 @@
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // simulate success
+    // success
     formWrapper.classList.add("hidden");
     successMessage.classList.remove("hidden");
   });
