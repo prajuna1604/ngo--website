@@ -13,8 +13,8 @@
   <header class="font-poppins">
     <!-- top header -->
     <div class="bg-white border-b h-20 hidden md:block">
-      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
+      <div class="container mx-auto py-4 flex items-center justify-between">
+        <div class="flex items-center ">
           <div class="text-primary text-3xl"></div>
           <div>
             <img src="" class="" alt="logo">
@@ -52,8 +52,8 @@
     </div>
     <!-- ================= NAVBAR ================= -->
     <nav class="bg-[#262f36] text-white font-Manrope text-xl border-b-4 border-orange-600 relative z-40 ">
-      <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-6 md:h-14">
-        <ul class="hidden md:flex space-x-10 text-sm font-semibold md:mt-5 ">
+      <div class="container mx-auto flex items-center justify-between h-6 md:h-14 ">
+        <ul class="hidden md:flex space-x-10 text-sm font-semibold md:mt-5">
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">HOME</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
@@ -203,19 +203,19 @@
     </nav>
   </header>
   <!-- carousel -->
-  <div class="relative  max-w-7px container-fluid mx-auto h-[520px] overflow-hidden font-poppins">
+  <div class="relative container-fluid mx-auto h-[520px] overflow-hidden font-poppins">
     <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
       <div class="relative w-full h-[520px] flex-shrink-0">
-        <img src="images/banner5.webp" class="w-full h-full object-cover" />
+        <img src="images/banner5.webp" class="w-full h-full object-cover container-fluid" />
         <div class="absolute inset-0 bg-black/40"></div>
-        <div class="absolute inset-0 flex flex-col items-start justify-center px-10 text-white m-5">
-          <h2 class="text-5xl font-semibold mb-4 bg-orange-600 px-3 py-1 inline-block">
+        <div class="absolute inset-0 flex flex-col items-start justify-center text-white m-5 container mx-auto ">
+          <h2 class="text-5xl font-semibold mb-4 bg-orange-600  inline-block">
             TOGETHER WE EDUACATE THE CHILD
           </h2>
-          <p class="text-4xl mb-4 bg-[#262F36]  px-3 py-1 inline-block">
+          <p class="text-4xl mb-4 bg-[#262F36]  inline-block">
             WE NEED YOUR SUPPORT
           </p>
-          <p class="text-2xl mb-6 bg-white  text-orange-600 px-3 py-1 inline-block">
+          <p class="text-2xl mb-6 bg-white  text-orange-600 inline-block">
             BECOME A PART TO CHANGE THE WORLD
           </p>
           <div class="flex gap-4">
@@ -231,14 +231,14 @@
       <div class="relative w-full h-[520px] flex-shrink-0">
         <img src="images/banner2.jpg" class="w-full h-full object-cover" />
         <div class="absolute inset-0 "></div>
-        <div class="absolute inset-0 flex flex-col items-start justify-center px-10 m-5">
-          <h2 class="text-5xl font-semibold mb-4 px-3 py-1 inline-block text-[#382924] ">
+        <div class="absolute inset-0 flex flex-col items-start justify-center container mx-auto ">
+          <h2 class="text-5xl font-semibold mb-4  inline-block text-[#382924] ">
             TO FEED AND EDUCATE
           </h2>
-          <p class="text-4xl mb-4  px-3 py-1 inline-block text-[#202A30] font-medium text-[#382924] ">
+          <p class="text-4xl mb-4  inline-block text-[#202A30] font-medium text-[#382924] ">
             WE NEED YOUR SUPPORT
           </p>
-          <p class="text-2xl mb-6 px-3 py-1 inline-block  bg-white text-orange-600 ">
+          <p class="text-2xl mb-6  inline-block  bg-white text-orange-600 ">
             BECOME A PART TO CHANGE THE WORLD
           </p>
 
@@ -255,14 +255,14 @@
       <div class="relative w-full h-[520px] flex-shrink-0">
         <img src="images/banner3.jfif" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black/50"></div>
-        <div class="absolute inset-0 flex flex-col items-start justify-center px-10 text-black m-5 ">
-          <h2 class="text-5xl font-semibold mb-4 text-white px-3 py-1 inline-block">
+        <div class="absolute inset-0 flex flex-col items-start justify-center text-black container mx-auto ">
+          <h2 class="text-5xl font-semibold mb-4 text-white inline-block">
             TO FEED AND EDUCATE
           </h2>
-          <p class="text-4xl mb-4 bg-[#1e293b] text-white px-3 py-1 inline-block">
+          <p class="text-4xl mb-4 bg-[#1e293b] text-white inline-block">
             WE NEED YOUR SUPPORT
           </p>
-          <p class="text-2xl mb-6 bg-white text-orange-600  px-3 py-1 inline-block">
+          <p class="text-2xl mb-6 bg-white text-orange-600 inline-block">
             BECOME A PART TO CHANGE THE WORLD
           </p>
           <div class="flex gap-4">
@@ -276,20 +276,92 @@
         </div>
       </div>
     </div>
-    <button onclick="prevSlide()"
-      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white w-10 h-10 rounded-full">
-      <i class="fa-solid fa-chevron-left fa-2xs"></i>
-    </button>
-    <button onclick="nextSlide()"
-      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white w-10 h-10 rounded-full">
-      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-    </button>
+    <div class="absolute flex items-center gap-4 bottom-8 left-1/2">
+      <div class="">
+        <button onclick="prevSlide()"
+          class="-translate-y-1/2 bg-black/50 text-white w-10 h-10 rounded-full hover:bg-white hover:text-black hover:font-bold">
+          <i class="fa-solid fa-chevron-left fa-2xs"></i>
+        </button>
+      </div>
+
+      <div>
+        <button onclick="nextSlide()"
+          class="-translate-y-1/2 bg-black/50 text-white w-10 h-10 rounded-full hover:bg-white hover:text-black hover:font-bold">
+          <i class="fa-solid fa-chevron-right fa-2xs"></i>
+        </button>
+      </div>
+    </div>
   </div>
   <!-- cards -->
-  <section>
-    <div class="container-fluid mx-auto px-0 py-0 grid grid-cols-1 md:grid-cols-3 font-poppins">
-      <div
-        class="relative bg-[url('images/donationimg.jfif')] bg-cover bg-center p-8 text-white  flex flex-col items-center text-center">
+  <section class="relative font-poppins overflow-hidden">
+  <div class="absolute inset-0">
+    <div class="grid grid-cols-1 md:grid-cols-3 h-full">
+
+      <div class="relative">
+        <img src="images/donationimg.jfif" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-orange-500 opacity-80"></div>
+      </div>
+
+      <div class="relative">
+        <img src="images/volunteerimg.jpg" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-orange-500 opacity-80"></div>
+      </div>
+
+      <div class="relative">
+        <img src="images/fundraiserimg.jfif" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-orange-500 opacity-80"></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="relative z-10 container mx-auto py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 text-white text-center gap-10">
+      <div class="px-8">
+        <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 mx-auto flex items-center justify-center">
+          <i class="fas fa-dollar-sign"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">DONATION</h3>
+        <p class="mb-4">
+          There are many variations of lorem passage of Lorem Ipsum available
+        </p>
+        <button class="donate-btn border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500">
+          DONATE NOW
+        </button>
+      </div>
+
+      <div class="px-8">
+        <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 mx-auto flex items-center justify-center">
+          <i class="fa-solid fa-handshake-angle"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">VOLUNTEER</h3>
+        <p class="mb-4">There are many variations of lorem passage of Lorem Ipsum available</p>
+        <button 
+  onclick="openJoinForm()"
+  class="border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500 transition z-10">
+  JOIN NOW
+</button>
+      </div>
+
+      <div class="px-8">
+        <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 mx-auto flex items-center justify-center">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">FUNDRAISE</h3>
+        <p class="mb-4">There are many variations of lorem passage of Lorem Ipsum available</p>
+        <button>
+          <a href="readmore" class="border border-white px-4 py-2 mb-4 rounded hover:bg-white hover:text-orange-500">
+          READ MORE</a>
+         
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- <section>
+    <div class="container-fluid bg-orange-600 mx-auto px-0 py-0 grid grid-cols-1 md:grid-cols-3 font-poppins">
+      <div class="relative bg-[url('images/donationimg.jfif')] bg-cover bg-center p-8 text-white
+        flex flex-col items-center text-center">  
         <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
           <i class="fas fa-dollar-sign text-xl"></i>
         </div>
@@ -301,7 +373,8 @@
         <div class="absolute inset-0 bg-orange-500 opacity-80 rounded-lg"></div>
       </div>
       <div
-        class="relative bg-[url('/images/volunteerimg.jpg')] bg-cover bg-center p-8 text-white  flex flex-col items-center text-center">
+        class="relative bg-[url('/images/volunteerimg.jpg')] bg-cover bg-center p-8 text-white
+         flex flex-col items-center text-center">
         <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
           <i class="fas fa-users text-xl"></i>
         </div>
@@ -312,11 +385,11 @@
   class="border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500 transition z-10">
   JOIN NOW
 </button>
-
         <div class="absolute inset-0 bg-orange-500 opacity-80 rounded-lg"></div>
       </div>
       <div
-        class="relative bg-[url('/images/fundraiserimg.jfif')] bg-cover bg-center p-8 text-white  flex flex-col items-center text-center">
+        class="relative bg-[url('/images/fundraiserimg.jfif')] bg-cover bg-center p-8 text-white 
+         flex flex-col items-center text-center">
         <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
           <i class="fas fa-heart text-xl"></i>
         </div>
@@ -328,7 +401,8 @@
         <div class="absolute inset-0 bg-orange-500 opacity-80 rounded-lg"></div>
       </div>
     </div>
-  </section>
+  </section> -->
+  
   <!--Become a part of the world -->
   <section class="bg-white py-16 font-poppins">
     <div class="container mx-auto px-4">
@@ -530,7 +604,8 @@
   </section>
   <!-- banner -->
   <section
-    class="relative max-auto w-full min-h-[80vh] bg-[url('/images/banner3.jfif')] bg-cover bg-center flex items-center justify-center font-poppins">
+    class="relative max-auto w-full min-h-[60vh] bg-[url('/images/banner3.jfif')] bg-cover bg-center flex items-center
+     justify-center font-poppins">
     <div class="absolute inset-0 bg-slate-900/70"></div>
     <div class="relative z-10 max-w-4xl text-center px-6 text-white">
       <!-- <span class="inline-block bg-orange-500 text-white text-xs font-semibold px-4 py-2 rounded mb-6">
