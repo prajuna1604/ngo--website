@@ -13,7 +13,7 @@
     index = (index - 1 + slides) % slides;
     showSlide();
   }
-  setInterval(nextSlide, 5000);
+  setInterval(nextSlide, 3000);
   // sponsor carousel
   const track = document.getElementById("sponsor-track");
   let scrollAmount = 0;
