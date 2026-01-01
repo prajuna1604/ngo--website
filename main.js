@@ -28,6 +28,39 @@
   let interval = setInterval(autoScroll, 60);
   track.addEventListener("mouseenter", () => clearInterval(interval));
   track.addEventListener("mouseleave", () => interval = setInterval(autoScroll, 60));
+  //volunteer modal
+  const volunteerButtons = document.querySelectorAll(".volunteerBtn");
+  const volunteerModal = document.getElementById("volunteerModal");
+
+  volunteerButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      volunteerModal.classList.remove("hidden");
+      volunteerModal.classList.add("flex");
+    });
+  });
+
+
+  function closeVolunteerForm() {
+    volunteerModal.classList.add("hidden");
+    volunteerModal.classList.remove("flex");
+  }
+   //volunteer modal
+  const sponsorButtons = document.querySelectorAll(".sponsorBtn");
+  const sponsorModal = document.getElementById("sponsorModal");
+
+  sponsorButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+     sponsorModal.classList.remove("hidden");
+      sponsorModal.classList.add("flex");
+    });
+  });
+
+
+  function closeSponsorForm() {
+   sponsorModal.classList.add("hidden");
+    sponsorModal.classList.remove("flex");
+  }
+ 
 // donation modal
   const modal = document.getElementById("donateModal");
   const donateButtons = document.querySelectorAll(".donate-btn");
