@@ -29,7 +29,7 @@
   track.addEventListener("mouseenter", () => clearInterval(interval));
   track.addEventListener("mouseleave", () => interval = setInterval(autoScroll, 60));
   //volunteer modal
-  const volunteerButtons = document.querySelectorAll(".volunteerBtn");
+  const volunteerButtons = document.querySelectorAll(".volunteer-btn");
   const volunteerModal = document.getElementById("volunteerModal");
 
   volunteerButtons.forEach(btn => {
@@ -99,18 +99,34 @@
     mobileMenu.classList.toggle("hidden");
   });
   
-  document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    const successMsg = document.getElementById('successMsg');
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault(); 
-      successMsg.classList.remove('hidden');
-      contactForm.reset();
-      setTimeout(() => {
-        successMsg.classList.add('hidden');
-      }, 3000);
-    });
+ document.addEventListener('DOMContentLoaded', function() {
+  // Select all forms that should trigger a success message
+  const forms = document.querySelectorAll('form'); // or use a specific class like '.contact-form' / '.donate-form'
+
+  forms.forEach(form => {
+    // Find the success message that belongs to this form
+    const successMsg = form.parentElement.querySelector('.successMsg');
+
+    // Only attach listener if the success message exists
+    if (successMsg) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault(); // prevent default form submission
+
+        // Show the success message
+        successMsg.classList.remove('hidden');
+
+        // Reset the form fields
+        form.reset();
+
+        // Hide the success message after 3 seconds
+        setTimeout(() => {
+          successMsg.classList.add('hidden');
+        }, 3000);
+      });
+    }
   });
+});
+
   
   document.querySelectorAll(".faq-btn").forEach(button => {
     button.addEventListener("click", () => {
@@ -152,4 +168,42 @@ function toggleAccordion(header) {
   function closeJoinForm() {
     document.getElementById("joinModal").classList.add("hidden");
   }
+
+
+function startCountdown(timer) {
+  const deadline = new Date(timer.dataset.deadline).getTime();
+
+  const daysEl = timer.querySelector('[data-days]');
+  const hoursEl = timer.querySelector('[data-hours]');
+  const minutesEl = timer.querySelector('[data-minutes]');
+  const secondsEl = timer.querySelector('[data-seconds]');
+
+  function updateTimer() {
+    const now = new Date().getTime();
+    const diff = deadline - now;
+
+    if (diff <= 0) {
+      daysEl.textContent = "0";
+      hoursEl.textContent = "0";
+      minutesEl.textContent = "0";
+      secondsEl.textContent = "0";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    daysEl.textContent = days;
+    hoursEl.textContent = hours;
+    minutesEl.textContent = minutes;
+    secondsEl.textContent = seconds;
+  }
+
+  updateTimer();
+  setInterval(updateTimer, 1000);
+}
+
+document.querySelectorAll('[data-deadline]').forEach(startCountdown);
 

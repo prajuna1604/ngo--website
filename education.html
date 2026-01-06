@@ -14,18 +14,8 @@
 <body>
   <header class="font-poppins">
     <!-- top header -->
-    <div class="bg-white border-b">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <div class="text-primary text-3xl"></div>
-          <div>
-            <img src="" alt="logo">
-            <h1 class="text-xl font-bold">
-              HopeFor<span class="text-orange-600 font-bold">All</span>
-            </h1>
-
-          </div>
-        </div>
+    <div class="bg-white border-b  hidden md:block">
+      <div class="container mx-auto py-2 flex items-center justify-end">
         <div class="hidden md:flex items-center space-x-8">
           <div class="flex items-center space-x-3">
             <div class="w-10 h-10 rounded-full border flex items-center justify-center text-primary">
@@ -45,47 +35,114 @@
               <p class="text-sm font-bold">(+977)-987654321</p>
             </div>
           </div>
-          <button class="donate-btn bg-orange-600 text-white px-6 py-2 rounded-full border-orange-600 text-sm font-semibold
-                 transition-all duration-300 hover:shadow-lg hover:shadow-orange-400/50 ">
-            DONATE NOW
-          </button>
         </div>
-
       </div>
     </div>
-    <!-- ================= NAVBAR ================= -->
-    <nav class="bg-[#262f36] text-white font-Manrope text-xl border-b-4 border-orange-600 relative z-40">
-      <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
-        <ul class="flex space-x-10 text-sm font-semibold mt-3">
-          <li class="relative group">
-            <a href="home1.html" class="hover:text-orange-600">HOME</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="home1.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 1</a></li>
-              <li><a href="home2.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 2</a></li>
-            </ul>
-          </li>
+    <!--  NAVBAR ================= -->
+    <nav class="bg-[#262f36] text-white font-poppins text-xl border-b-4 border-orange-600 relative z-40">
+      <div class="container mx-auto flex items-center justify-between h-6 md:h-14 ">
+        <div class="flex items-center ">
+          <div class="text-primary text-3xl"></div>
+          <div class="hidden md:flex items-center gap-2">
+            <img src="" class="" alt="logo">
+            <h1 class="text-xl font-bold">
+              HopeFor<span class="text-orange-600 font-bold">All</span>
+            </h1>
+          </div>
 
+        </div>
+        <ul class="hidden md:flex space-x-10 text-sm font-semibold md:mt-5 ">
+          <li class="relative group">
+            <a href="/" class="hover:text-orange-600">HOME</a>
+          </li>
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">CAUSES</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="education.html"
-                  class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Education</a></li>
-              <li><a href="health.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Health</a>
+             opacity-0 invisible group-hover:opacity-100 group-hover:visible
+             transition-all duration-200 z-50">
+              <li>
+                <a href="education.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Education
+                </a>
               </li>
+              <li>
+                <a href="health.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Health
+                </a>
+              </li>
+              <li class="relative group/volunteer">
+                <a href="#"
+                  class="flex items-center justify-between px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Volunteer
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <ul class="absolute left-full top-0 ml-1 w-44 bg-orange-500 rounded-md shadow-lg
+                 opacity-0 invisible group-hover/volunteer:opacity-100
+                 group-hover/volunteer:visible
+                 transition-all duration-200 z-50">
+                  <li>
+                    <a href="joinus.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Join Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="guidelines.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Guidelines
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
             </ul>
           </li>
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">ABOUT</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="mission.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Our
-                  Mission</a></li>
-              <li><a href="team.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Team</a></li>
+             opacity-0 invisible group-hover:opacity-100 group-hover:visible
+             transition-all duration-200 z-50">
+
+              <li>
+                <a href="mission.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Our Mission
+                </a>
+              </li>
+              <li>
+                <a href="team.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Team
+                </a>
+              </li>
+              <li>
+                <a href="faq.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  FAQ
+                </a>
+              </li>
+
+              <li class="relative group/gallery">
+                <a href="#"
+                  class="flex items-center justify-between px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Gallery
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <ul class="absolute left-full top-0 ml-1 w-44 bg-orange-500 rounded-md shadow-lg
+                 opacity-0 invisible group-hover/gallery:opacity-100
+                 group-hover/gallery:visible
+                 transition-all duration-200 z-50">
+
+                  <li>
+                    <a href="photos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Photos
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="videos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Videos
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
             </ul>
           </li>
           <li class="relative group">
@@ -93,50 +150,21 @@
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
-              <li><a href="upcoming.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Upcoming</a></li>
+              <li><a href="upcoming.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Upcoming</a>
+              </li>
               <li><a href="past.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Past</a></li>
             </ul>
           </li>
-          <li class="relative group">
-            <a href="#" class="hover:text-orange-600">VOLUNTEER</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="joinus.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Join Us</a></li>
-              <li><a href="guidelines.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Guidelines</a>
-              </li>
-            </ul>
-          </li>
-          <li class="relative group">
-            <a href="#" class="hover:text-orange-600">GALLERY</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="photos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Photos</a></li>
-              <li><a href="videos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Videos</a></li>
-            </ul>
-          </li>
-
-          <li class="relative group">
-            <a href="#" class="hover:text-orange-600">PAGES</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="donation.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Donation</a></li>
-              <li><a href="faq.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">FAQ</a></li>
-            </ul>
-          </li>
-
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">BLOG</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
-              <li><a href="latest.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Latest</a></li>
+              <li><a href="latest.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Latest</a>
+              </li>
               <li><a href="news.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">News</a></li>
             </ul>
           </li>
-
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">CONTACT</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
@@ -144,143 +172,280 @@
                    transition-all duration-200 z-50">
               <li><a href="contactform.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Contact
                   Form</a></li>
-              <li><a href="location.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Location</a></li>
+              <li><a href="location.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Location</a>
+              </li>
             </ul>
           </li>
-
         </ul>
-        <!-- SEARCH -->
-        <div class="relative hidden md:block">
-          <input type="text" placeholder="Search..." class="bg-[#262f36] text-white px-4 py-3 focus:outline-none " />
-          <span class="absolute right-3 top-1/2 -translate-y-1/2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-        </div>
+
+        <button class="donate-btn hidden md:inline-block bg-orange-600 text-white px-6 py-2 rounded-full 
+               border-orange-600 text-sm font-semibold transition-all duration-300 
+               hover:shadow-lg hover:shadow-orange-400/50">
+          DONATE NOW
+        </button>
 
       </div>
-    </nav>
+      <div class="wrapper flex item-center justify-between  md:hidden">
+        <div>
+          <!-- <img src="" class="h-4 w-4" alt="logo"> -->
+          <h1 class="text-xl font-bold ml-4">
+            HopeFor<span class="text-orange-600 font-bold ">All</span>
+          </h1>
+        </div>
+        <div class="flex justify-end mr-4">
+          <div class="sm:hidden flex items-center px-1 py-4 cursor-pointer" id="mobile-menu-button">
+            <i class="fa-solid fa-bars fa-lg text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu"
+        class="hidden md:hidden absolute top-14 left-0 w-full bg-[#262f36] text-white shadow-lg z-50">
+        <ul class="flex flex-col divide-y divide-gray-700">
+          <li>
+            <a href="#home" class="block px-6 py-4 hover:bg-orange-600">Home</a>
+          </li>
+          <li>
+            <a href="#causes" class="block px-6 py-4 hover:bg-orange-600">Causes</a>
+          </li>
+          <li>
+            <a href="#about" class="block px-6 py-4 hover:bg-orange-600">About Us</a>
+          </li>
+          <li>
+            <a href="#events" class="block px-6 py-4 hover:bg-orange-600">Events</a>
+          </li>
+          <li>
+            <a href="#blog" class="block px-6 py-4 hover:bg-orange-600">Blog</a>
+          </li>
+          <li>
+            <a href="#contact" class="block px-6 py-4 hover:bg-orange-600">contact</a>
+          </li>
+        </ul>
+      </div>
 
+    </nav>
   </header>
  
+ <div class="relative  max-w-7px container-fluid mx-auto  h-[520px] overflow-hidden">
+    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+      <div class="relative w-full h-[520px] flex-shrink-0">
+        <img src="images/banner5.webp" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-10 text-white">
+          <h2 class="text-5xl font-semibold mb-4  px-3 py-1 inline-block">
+           EDUCATION
+          </h2>
+          <nav aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2 text-sm sm:text-base">
+            <li>
+              <a href="home1.html" class="hover:text-orange-500 transition">
+                Home
+              </a>
+            </li>
+            <li class="text-gray-300">/</li>
+            <li class="text-orange-500 font-semibold">
+              Education
+            </li>
+          </ol>
+        </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- sponsors -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-3xl font-bold uppercase">Our Trusted Partners</h2>
+        <div class="w-20 h-1 bg-orange-600 mx-auto mt-3"></div>
+      </div>
+      <div class="relative overflow-hidden">
+        <div id="sponsor-track" class="flex gap-8 items-center transition-transform duration-700 ease-linear">
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logon-1.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logo-5.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logon-4.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logo-6.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logon-3.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logo-7.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logon-2.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logo-8.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logon-4.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logo-5.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logon-4.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logo-6.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+        </div>
+      </div>
 
+    </div>
+    <!-- <div class="flex justify-center items-center mt-5 ">
+      <button class="sponsorBtn inline-block bg-orange-500 text-white text-sm font-semibold px-8 py-2 rounded-full
+         mb-6 hover:bg-orange-600 transition">
+        BECOME A SPONSOR
+      </button>
+    </div> -->
+  </section>
   <!-- footer -->
-  <footer class="bg-gradient-to-b from-slate-900 to-slate-800 text-gray-400">
-    <div class="max-w-7xl mx-auto px-6 py-16">
+ <footer class="bg-[#262f36] text-gray-400 font-poppins">
+    <div class="container mx-auto px-6 py-16">
       <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <h3 class="text-white font-semibold mb-4">ABOUT US</h3>
           <p class="text-sm leading-relaxed mb-6">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas debitis temporibus at soluta voluptatum
-            perspiciatis,
-            itaque, nisi
-            repellat ducimus ex quasi nesciunt deserunt repellendus! Quasi veniam ipsum ducimus suscipit nemo!
+            Hope For All is a non-profit organization dedicated to transforming lives and building sustainable 
+            communities across Nepal. Since 2024, we've been working on the ground to provide education, healthcare, 
+            clean water, and economic opportunities to those who need it most.
           </p>
 
           <ul class="space-y-3 text-sm">
             <li class="flex gap-2">
-              <i class="fa-solid fa-location-dot mt-1"></i>
-              Nepal
+              <i class="fa-solid fa-location-dot mt-1 text-orange-500"></i>
+              Kathmandu, Nepal
             </li>
             <li class="flex gap-2">
-              <i class="fa-regular fa-envelope mt-1"></i>
-              HopeForAll@gmail.com
+              <i class="fa-regular fa-envelope mt-1 text-white"></i>
+              info@hopeforall.org.np
             </li>
             <li class="flex gap-2">
-              <i class="fa-solid fa-phone mt-1"></i>
-              Call Us: +977-987654321
+              <i class="fa-solid fa-phone mt-1 text-orange-500"></i>
+              +977-98-765-4321
+            </li>
+            <li class="flex gap-2">
+              <i class="fa-solid fa-clock mt-1 text-orange-500"></i>
+              Mon-Fri: 9AM-5PM
             </li>
           </ul>
         </div>
+
         <div>
           <h3 class="text-white font-semibold mb-4">WHAT WE DO</h3>
           <ul class="space-y-3 text-sm">
-            <li class="border-b border-white/10 pb-2">Education</li>
-            <li class="border-b border-white/10 pb-2">Health</li>
-            <li class="border-b border-white/10 pb-2">Social Services</li>
-            <li class="border-b border-white/10 pb-2">Microfinance</li>
-            <li class="border-b border-white/10 pb-2">Infrastructure</li>
-            <li>Emergency Response</li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="education.html" class="hover:text-orange-400 transition">
+                Education & Scholarships
+              </a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="health.html" class="hover:text-orange-400 transition">Healthcare & Medical Camps</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="services.html" class="hover:text-orange-400 transition">Community Services</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="microfinance.html" class="hover:text-orange-400 transition">Women's Microfinance</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="infrastructure.html" class="hover:text-orange-400 transition">
+                Clean Water & Infrastructure
+              </a>
+            </li>
+            <li>
+              <a href="emergencyresponse.html" class="hover:text-orange-400 transition">Disaster Relief & Emergency Response</a>
+            </li>
           </ul>
         </div>
         <div>
-          <h3 class="text-white font-semibold mb-4">NEWSROOM</h3>
+          <h3 class="text-white font-semibold mb-4">QUICK LINKS</h3>
           <ul class="space-y-3 text-sm">
-            <li class="border-b border-white/10 pb-2">Press Releases</li>
-            <li class="border-b border-white/10 pb-2">Official Statements</li>
-            <li class="border-b border-white/10 pb-2">Emergency Reports</li>
-            <li class="border-b border-white/10 pb-2">Blog & News</li>
-            <li class="border-b border-white/10 pb-2">Features</li>
-            <li>Press Contacts</li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="/" class="hover:text-orange-400 transition">Home</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="causes.html" class="hover:text-orange-400 transition">Our Causes</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="about.html" class="hover:text-orange-400 transition">About Us</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="events.html" class="hover:text-orange-400 transition">Events</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="blog.html" class="hover:text-orange-400 transition">Blog & News</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="contact.html" class="hover:text-orange-400 transition">Contact Us</a>
+            </li>
           </ul>
         </div>
-        <!-- <div>
-          <h3 class="text-white font-semibold mb-4">CALENDAR</h3>
-          <p class="text-sm text-white mb-3">December 2025</p>
+        <div>
+          <h3 class="text-white font-semibold mb-4">STAY CONNECTED</h3>
+          <p class="text-gray-400 mb-4 text-sm">
+            Subscribe to our newsletter and be the first to know about our impact stories, upcoming projects, and
+             volunteer opportunities. Join our community of changemakers.
+          </p>
 
-          <div class="border border-white/20 rounded-lg p-3 text-xs">
-            <div class="grid grid-cols-7 text-center font-semibold text-white mb-2">
-              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+          <form class="flex gap-2">
+            <input type="email" placeholder="Your email address" class="flex-1 px-3 py-3 bg-gray-800 rounded-md text-gray-300 
+              placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 border border-gray-700">
+            <button type="submit"
+              class="px-6 py-3 bg-orange-500 text-white rounded-md font-medium hover:bg-orange-600 transition-colors">
+              Subscribe
+            </button>
+          </form>
+          
+          <div class="mt-6">
+            <p class="text-white text-sm mb-3">Follow Our Journey:</p>
+            <div class="flex gap-3">
+              <a href="https://www.facebook.com/" aria-label="Follow us on Facebook" class="hover:opacity-80">
+                <i class="fa-brands fa-facebook text-blue-500 text-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/" aria-label="Follow us on Instagram" class="hover:opacity-80">
+                <i class="fa-brands fa-instagram text-pink-500 text-lg"></i>
+              </a>
+              <a href="https://www.youtube.com/" aria-label="Follow us on YouTube" class="hover:opacity-80">
+                <i class="fa-brands fa-youtube text-red-600 text-lg"></i>
+              </a>
+              <a href="https://www.linkedin.com/" aria-label="Follow us on LinkedIn" class="hover:opacity-80">
+                <i class="fa-brands fa-linkedin text-blue-400 text-lg"></i>
+              </a>
+              <a href="https://twitter.com/" aria-label="Follow us on Twitter" class="hover:opacity-80">
+                <i class="fa-brands fa-twitter text-sky-400 text-lg"></i>
+              </a>
             </div>
-
-            <div class="grid grid-cols-7 gap-1 text-center">
-              <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
-              <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
-              <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
-              <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
-              <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="max-w-4xl mx-auto px-4 hover:border-2">
-          <div class="text-center mb-2">
-            <h2 class="text-lg font-bold uppercase mb-2 text-white">Contact Us</h2>
-          </div>
-          <div class="shadow rounded-lg p-2">
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-2">
-
-              <input type="text" placeholder="Your Name" required
-                class="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-orange-500" />
-
-              <input type="email" placeholder="Your Email" required
-                class="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-orange-500" />
-
-              <input type="text" placeholder="Subject" required
-                class="md:col-span-2 border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-orange-500" />
-
-              <textarea rows="4" placeholder="Your Message" required
-                class="md:col-span-2 border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-orange-500 resize-none"></textarea>
-
-              <div class="md:col-span-2 text-center">
-                <button type="submit"
-                  class="bg-orange-500 text-white px-8 py-2 rounded font-semibold uppercase hover:bg-orange-600 transition">
-                  Send Message
-                </button>
-              </div>
-
-            </form>
           </div>
         </div>
-
       </div>
+
+     
       <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-
-        <p class="text-sm">
-          Privacy Policy - Terms of use
-        <p class="copyright items-center justify-center">
-          © 2025 | All Rights Reserved
-        </p>
-        </p>
-
-        <div class="flex gap-4 text-lg">
-          <i class="fa-brands fa-linkedin hover:text-blue-600 cursor-pointer"></i>
-          <i class="fa-brands fa-facebook hover:text-blue-400 cursor-pointer"></i>
-          <i class="fa-brands fa-twitter hover:text-blue-600 cursor-pointer"></i>
-          <i class="fa-brands fa-skype hover:text-blue-800 cursor-pointer"></i>
+        <div class="text-sm text-center md:text-left">
+          <p class="mb-2">
+            Registered Charity No: 12345/2010 | PAN No: 34561289NPL
+          </p>
+          <p>
+            <a href="privacy-policy.html" class="hover:text-orange-400 transition mr-4">Privacy Policy</a>
+            <a href="terms.html" class="hover:text-orange-400 transition mr-4">Terms of Use</a>
+          </p>
         </div>
-
+        
+        <div class="text-sm">
+          <p class="copyright">
+            © 2025 Hope For All Nepal. All Rights Reserved.
+          </p>
+        </div>
       </div>
-
     </div>
   </footer>
   <!-- Donation Modal -->

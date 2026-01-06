@@ -14,17 +14,8 @@
 <body>
   <header class="font-poppins">
     <!-- top header -->
-    <div class="bg-white border-b h-20 hidden md:block">
-      <div class="container mx-auto py-4 flex items-center justify-between">
-        <div class="flex items-center ">
-          <div class="text-primary text-3xl"></div>
-          <div>
-            <img src="" class="" alt="logo">
-            <h1 class="text-xl font-bold">
-              HopeFor<span class="text-orange-600 font-bold">All</span>
-            </h1>
-          </div>
-        </div>
+    <div class="bg-white border-b  hidden md:block">
+      <div class="container mx-auto py-2 flex items-center justify-end">
         <div class="hidden md:flex items-center space-x-8">
           <div class="flex items-center space-x-3">
             <div class="w-10 h-10 rounded-full border flex items-center justify-center text-primary">
@@ -44,52 +35,113 @@
               <p class="text-sm font-bold">(+977)-987654321</p>
             </div>
           </div>
-          <button class="donate-btn bg-orange-600 text-white px-6 py-2 rounded-full border-orange-600 text-sm font-semibold
-                 transition-all duration-300 hover:shadow-lg hover:shadow-orange-400/50 ">
-            DONATE NOW
-          </button>
         </div>
-
       </div>
     </div>
     <!--  NAVBAR ================= -->
-    <nav class="bg-[#262f36] text-white font-Manrope text-xl border-b-4 border-orange-600 relative z-40">
-      <div class="container  mx-auto flex items-center justify-between h-6 md:h-14">
-        <ul class="hidden md:flex space-x-10 text-sm font-semibold md:mt-5">
+    <nav class="bg-[#262f36] text-white font-poppins text-base md:text-lg  border-b-4 border-orange-600 relative z-40">
+      <div class="container mx-auto flex items-center justify-between h-6 md:h-14 ">
+        <div class="flex items-center ">
+          <div class="text-primary text-3xl"></div>
+          <div class="hidden md:flex items-center gap-2">
+            <img src="images/logo.png" alt="logo" class="h-10 w-auto object-contain">
+            <h1 class=" text-2xl md:text-3xl font-bold">
+              HopeFor<span class="text-orange-600 font-bold">All</span>
+            </h1>
+          </div>
+
+        </div>
+        <ul class="hidden md:flex space-x-10 text-base font-medium md:font-semibold md:mt-5 ">
           <li class="relative group">
-            <a href="#" class="hover:text-orange-600">HOME</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="home1.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 1</a></li>
-              <li><a href="home2.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 2</a></li>
-              <li><a href="home3.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 3</a></li>
-              <li><a href="home4.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Home 4</a></li>
-            </ul>
+            <a href="/" class="hover:text-orange-600">HOME</a>
           </li>
           <li class="relative group">
-            <a href="#" class="hover:text-orange-600">CAUSES</a>
+            <a href="/" class="hover:text-orange-600">CAUSES</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="education.html"
-                  class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Education</a></li>
-              <li><a href="health.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Health</a>
+             opacity-0 invisible group-hover:opacity-100 group-hover:visible
+             transition-all duration-200 z-50">
+              <li>
+                <a href="education.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Education
+                </a>
+              </li>
+              <li>
+                <a href="health.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Health
+                </a>
+              </li>
+              <li class="relative group/volunteer">
+                <a href="#"
+                  class="flex items-center justify-between px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Volunteer
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <ul class="absolute left-full top-0 ml-1 w-44 bg-orange-500 rounded-md shadow-lg
+                 opacity-0 invisible group-hover/volunteer:opacity-100
+                 group-hover/volunteer:visible
+                 transition-all duration-200 z-50">
+                  <li>
+                    <a href="joinus.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Join Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="guidelines.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Guidelines
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
           <li class="relative group">
-            <a href="#" class="hover:text-orange-600">ABOUT</a>
+            <a href="/" class="hover:text-orange-600">ABOUT</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="mission.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Our
-                  Mission</a></li>
-              <li><a href="team.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Team</a></li>
+             opacity-0 invisible group-hover:opacity-100 group-hover:visible
+             transition-all duration-200 z-50">
+              <li>
+                <a href="mission.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Our Mission
+                </a>
+              </li>
+              <li>
+                <a href="team.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Team
+                </a>
+              </li>
+              <li>
+                <a href="faq.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  FAQ
+                </a>
+              </li>
+
+              <li class="relative group/gallery">
+                <a href="#"
+                  class="flex items-center justify-between px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                  Gallery
+                  <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <ul class="absolute left-full top-0 ml-1 w-44 bg-orange-500 rounded-md shadow-lg
+                 opacity-0 invisible group-hover/gallery:opacity-100
+                 group-hover/gallery:visible
+                 transition-all duration-200 z-50">
+                  <li>
+                    <a href="photos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Photos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="videos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">
+                      Videos
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="relative group">
-            <a href="#" class="hover:text-orange-600">EVENTS</a>
+            <a href="/" class="hover:text-orange-600">EVENTS</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
@@ -99,40 +151,7 @@
             </ul>
           </li>
           <li class="relative group">
-            <a href="#" class="hover:text-orange-600">VOLUNTEER</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="joinus.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Join Us</a>
-              </li>
-              <li><a href="guidelines.html"
-                  class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Guidelines</a>
-              </li>
-            </ul>
-          </li>
-          <li class="relative group">
-            <a href="#" class="hover:text-orange-600">GALLERY</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="photos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Photos</a>
-              </li>
-              <li><a href="videos.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Videos</a>
-              </li>
-            </ul>
-          </li>
-          <li class="relative group">
-            <a href="#" class="hover:text-orange-600">PAGES</a>
-            <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
-                   opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                   transition-all duration-200 z-50">
-              <li><a href="donation.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">Donation</a>
-              </li>
-              <li><a href="faq.html" class="block px-4 py-2 hover:bg-orange-100 hover:text-orange-600">FAQ</a></li>
-            </ul>
-          </li>
-          <li class="relative group">
-            <a href="#" class="hover:text-orange-600">BLOG</a>
+            <a href="/" class="hover:text-orange-600">BLOG</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
@@ -142,7 +161,7 @@
             </ul>
           </li>
           <li class="relative group">
-            <a href="#" class="hover:text-orange-600">CONTACT</a>
+            <a href="/" class="hover:text-orange-600">CONTACT</a>
             <ul class="absolute left-0 top-full mt-2 w-44 bg-orange-500 rounded-md shadow-lg
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
                    transition-all duration-200 z-50">
@@ -153,12 +172,11 @@
             </ul>
           </li>
         </ul>
-        <div class="relative hidden md:block">
-          <input type="text" placeholder="Search..." class="bg-[#262f36] text-white px-4 py-3 focus:outline-none " />
-          <span class="absolute right-3 top-1/2 -translate-y-1/2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-        </div>
+        <button class="donate-btn hidden md:inline-block bg-orange-600 text-white btn btn-primary px-6 py-2 rounded-full 
+               border-orange-600 text-sm font-semibold transition-all duration-300 
+               hover:shadow-lg hover:shadow-orange-400/50" aria-label="Make a donation">
+          DONATE NOW
+        </button>
       </div>
       <div class="wrapper flex item-center justify-between  md:hidden">
         <div>
@@ -189,15 +207,6 @@
             <a href="#events" class="block px-6 py-4 hover:bg-orange-600">Events</a>
           </li>
           <li>
-            <a href="#volunteer" class="block px-6 py-4 hover:bg-orange-600">Volunteer</a>
-          </li>
-          <li>
-            <a href="#gallery" class="block px-6 py-4 hover:bg-orange-600">Gallery</a>
-          </li>
-          <li>
-            <a href="#pages" class="block px-6 py-4 hover:bg-orange-600">Pages</a>
-          </li>
-          <li>
             <a href="#blog" class="block px-6 py-4 hover:bg-orange-600">Blog</a>
           </li>
           <li>
@@ -205,99 +214,90 @@
           </li>
         </ul>
       </div>
+
     </nav>
   </header>
   <!-- carousel -->
-  <div class="relative container-fluid mx-auto h-[520px] overflow-hidden font-poppins">
-    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-      <div class="relative w-full h-[520px] flex-shrink-0">
-        <img src="images/banner-8.jpg" class="w-full h-full object-cover container-fluid" />
+  <div class="relative container-fluid mx-auto min-h-[600px] md:min-h-[700px] overflow-hidden font-poppins ">
+    <div id="carousel" class="flex transition-transform duration-700 ease-in-out ">
+      <div class="relative w-full min-h-[300px] md:h-[580px] flex-shrink-0 ">
+        <img src="images/banner-8.jpg" class="w-full h-full object-cover container-fluid" alt="banner" />
         <div class="absolute inset-0 bg-black/40"></div>
-        <div class="absolute inset-0 flex flex-col items-start justify-center text-white m-5 container mx-auto ">
-          <h2 class="text-5xl font-semibold mb-4 bg-[] orange-600  inline-block">
+        <div class="absolute inset-0 flex flex-col items-start justify-center text-white container mx-auto">
+          <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-2 bg-[] orange-600  inline-block">
             TOGETHER WE EDUACATE THE CHILD
           </h2>
-          <p class="text-4xl mb-4 bg-[#262F36]  inline-block">
+          <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mt-4 mb-4 bg-[#262F36]  inline-block">
             WE NEED YOUR SUPPORT
-          </p>
-          <p class="text-2xl mb-6 bg-white text-orange-600 inline-block">
+          </h3>
+          <p class="text-lg md:text-xl mt-2 font-medium mb-6 bg-white text-orange-600 inline-block ">
             BECOME A PART TO CHANGE THE WORLD
           </p>
           <div class="flex gap-4 items-center">
-            <!-- <button class="donate-btn bg-orange-600 px-6 py-2 hover:bg-orange-700  rounded-full font-semibold">
-              Donate Now
-            </button>
-           
-            <a href="aboutus"
-            class="bg-white text-orange-600 px-6 py-2 border-2 border-orange-600 
-            font-semibold rounded-full 
-            hover:bg-orange-600 hover:text-white ">
-              Learn More
-              </a> -->
-            <button class="donate-btn px-8 py-2 bg-orange-600 text-white font-semibold rounded-full 
+            <button class="donate-btn  btn btn-primary px-6 py-2 bg-orange-600 text-white font-semibold rounded-full 
                hover:bg-orange-700 transition duration-300 min-w-[160px]">
               Donate Now
             </button>
-            <a href="aboutus" class="px-8 py-2 bg-white text-orange-600 border-2 border-orange-600 font-semibold 
+            <a href="aboutus"  aria-label="Description" class="px-8 py-2 bg-white text-orange-600 border-2 border-orange-600 font-semibold 
             rounded-full hover:bg-orange-600 hover:text-white hover:border-orange-600 transition duration-300 
             min-w-[160px] text-center">
               Learn More
             </a>
-
           </div>
         </div>
       </div>
-      <div class="relative w-full h-[520px] flex-shrink-0">
-        <img src="images/banner7.jpg" class="w-full h-full object-cover" />
+      <div class="relative w-full  min-h-[300px] md:h-[580px] flex-shrink-0">
+        <img src="images/banner7.jpg" class="w-full h-full object-cover" alt="banner" />
         <div class="absolute inset-0 "></div>
         <div class="absolute inset-0 flex flex-col items-start justify-center container mx-auto ">
-          <h2 class="text-5xl font-semibold mb-4 inline-block text-[#382924] ">
+          <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-2 bg-[] inline-block text-[#382924] ">
             TO FEED AND EDUCATE
           </h2>
-          <p class="text-4xl mb-4 inline-block text-white [#202A30] font-medium text-[#382924] bg-[#262F36] ">
+          <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mt-4 mb-4 bg-[#262F36]  inline-block
+             text-white bg-[#202A30] text-[#382924]">
             WE NEED YOUR SUPPORT
-          </p>
-          <p class="text-2xl mb-6  inline-block bg-white text-orange-600 ">
+          </h3>
+          <p class="text-lg md:text-xl mt-2 font-medium mb-6 bg-white text-orange-600 inline-block">
             BECOME A PART TO CHANGE THE WORLD
           </p>
 
           <div class="flex gap-4">
             <button
-              class="donate-btn px-8 py-2 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-700 transition duration-300 min-w-[160px]">
+              class="donate-btn  btn btn-primary px-6 py-2 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-700 transition duration-300 min-w-[160px]">
               Donate Now
             </button>
             <a href="aboutus"
-              class="px-8 py-2 bg-white text-orange-600 border-2 border-orange-600 font-semibold rounded-full hover:bg-orange-600 hover:text-white hover:border-orange-600 transition duration-300 min-w-[160px] text-center">
+              aria-label="Description" class="px-8 py-2 bg-white text-orange-600 border-2 border-orange-600 font-semibold rounded-full hover:bg-orange-600 hover:text-white hover:border-orange-600 transition duration-300 min-w-[160px] text-center">
               Learn More
             </a>
-
           </div>
         </div>
       </div>
-      <div class="relative w-full h-[520px] flex-shrink-0">
-        <img src="images/banner5.webp" class="w-full h-full object-cover" />
+      <div class="relative w-full  min-h-[300px] md:h-[580px] flex-shrink-0">
+        <img src="images/banner5.webp" class="w-full h-full object-cover" alt="banner" />
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="absolute inset-0 flex flex-col items-start justify-center text-black container mx-auto ">
-          <h2 class="text-5xl font-semibold mb-4 text-white inline-block">
+          <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-2 bg-[] orange-600  inline-block
+          text-white ">
             HOPE BEGINS WITH SCHOOLING
           </h2>
-          <p class="text-4xl mb-4 bg-[#1e293b] text-white inline-block">
+          <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mt-4 mb-4 bg-[#262F36]  inline-block
+           text-white">
             Helping communities thrive
-          </p>
-          <p class="text-2xl mb-6 bg-white text-orange-600 inline-block">
+          </h3>
+          <p class="text-lg md:text-xl mt-2 font-medium mb-6 bg-white text-orange-600 inline-block">
             BECOME A PART TO CHANGE THE WORLD
           </p>
           <div class="flex gap-4">
-            <button class="donate-btn px-8 py-2 bg-orange-600 text-white font-semibold rounded-full 
+            <button class="donate-btn  btn btn-primary px-6 py-2 bg-orange-600 text-white font-semibold rounded-full 
             hover:bg-orange-700 transition duration-300 min-w-[160px]">
               Donate Now
             </button>
-            <a href="aboutus" class="px-8 py-2 bg-white text-orange-600 border-2 border-orange-600 font-semibold 
+            <a href="aboutus"  aria-label="Description" class="px-8 py-2 bg-white text-orange-600 border-2 border-orange-600 font-semibold 
             rounded-full hover:bg-orange-600 hover:text-white hover:border-orange-600 transition duration-300 
             min-w-[160px] text-center">
               Learn More
             </a>
-
           </div>
         </div>
       </div>
@@ -306,140 +306,53 @@
     <!-- <div class="relative">
   <button onclick="prevSlide()"
     class="absolute -left-1 top-1/2 -translate-y-15/2
-            text-white w-10 h-10 rounded-full 
+           bg-black/50 text-white w-10 h-10 rounded 
            hover:bg-white hover:text-black transition">
     <i class="fa-solid fa-chevron-left fa-2xs"></i>
   </button>
   <button onclick="nextSlide()"
     class="absolute -right-1 top-1/2 -translate-y-15/2 
-           text-white w-10 h-10 rounded-full 
+        bg-black/50 text-white w-10 h-10 rounded 
            hover:bg-white hover:text-black transition">
     <i class="fa-solid fa-chevron-right fa-2xs"></i>
   </button>
 </div> -->
 
-    <div class="absolute flex items-center gap-2 bottom-8 left-1/2">
+    <div class="absolute flex items-center gap-2  md:bottom-8 left-1/2">
       <div class="">
-        <button onclick="prevSlide()" class="-translate-y-3/2 bg-black/50 text-white w-10 h-10 rounded hover:bg-white hover:text-black
+        <button onclick="prevSlide()" aria-label="Previous slide" class="-translate-y-10/2  bg-black/50 text-white w-10 h-10 rounded 
+        hover:bg-white hover:text-black
            hover:font-bold ">
-          <i class="fa-solid fa-chevron-left fa-2xs"></i>
+          <i class="fa-solid fa-chevron-left fa-2xs " aria-hidden="true"></i>
         </button>
       </div>
       <div>
-        <button onclick="nextSlide()" class="-translate-y-3/2 bg-black/50 text-white w-10 h-10 rounded hover:bg-white hover:text-black 
+        <button onclick="nextSlide()" aria-label="Next slide" class="-translate-y-10/2 bg-black/50 text-white w-10 h-10 rounded 
+        hover:bg-white hover:text-black 
           hover:font-bold">
-          <i class="fa-solid fa-chevron-right fa-2xs"></i>
+          <i class="fa-solid fa-chevron-right fa-2xs" aria-hidden="true"></i>
         </button>
       </div>
     </div>
   </div>
 
   <!-- cards -->
-  <!-- <section>
-    <div class="container-fluid bg-orange-500/90 opacity-90">
-      <div class="container-fluid mx-auto px-0 py-0 grid grid-cols-1 md:grid-cols-3 font-poppins">
-        <div class="relative bg-[url('images/donationimg.jfif')] bg-cover bg-center p-8 text-white
-        flex flex-col items-center text-center ">
-          <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
-            <i class="fas fa-dollar-sign text-xl"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-2 z-10">DONATION</h3>
-          <p class="mb-4 z-10">There are many variations of lorem passage of Lorem Ipsum available</p>
-          <button class="donate-btn border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500
-           transition z-10"> DONATE NOW</button>
-          <div class="absolute inset-0 bg-orange-500 opacity-80 "></div>
-        </div>
-        <div class="relative bg-[url('/images/volunteerimg.jpg')] bg-cover bg-center p-8 text-white
-         flex flex-col items-center text-center">
-          <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
-            <i class="fas fa-users text-xl"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-2 z-10">VOLUNTEER</h3>
-          <p class="mb-4 z-10">There are many variations of lorem passage of Lorem Ipsum available</p>
-          <button onclick="openJoinForm()"
-            class="joinnowbtn border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500 transition z-10">
-            JOIN NOW
-          </button>
-          <div class="absolute inset-0 bg-orange-500 opacity-80 "></div>
-        </div>
-        <div class="relative bg-[url('/images/fundraiserimg.jfif')] bg-cover bg-center p-8 text-white 
-         flex flex-col items-center text-center">
-          <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
-            <i class="fas fa-heart text-xl"></i>
-          </div>
 
-          <h3 class="text-xl font-bold mb-2 z-10">FUNDRAISE</h3>
-          <p class="mb-4 z-10">There are many variations of lorem passage of Lorem Ipsum available</p>
-          <button
-            class="readmore-btn border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500
-             transition z-10">
-            READ MORE</button>
-          <div class="absolute inset-0 bg-orange-500 opacity-80 "></div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section>
-  <div class="container-fluid bg-orange-500/90 opacity-90">
-    <div class="container-fluid mx-auto px-0 py-0 grid grid-cols-1 md:grid-cols-3 font-poppins">
-      <div class="relative bg-[url('images/donationimg.jfif')] bg-cover bg-center p-8 text-white min-h-[100px]
-        flex flex-col items-start text-left">
-        <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
-          <i class="fas fa-dollar-sign text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-2 z-10">DONATION</h3>
-        <p class="mb-4 z-10 max-w-[80%]">There are many variations of lorem passage of Lorem Ipsum available</p> 
-        <button class="donate-btn border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500
-          transition z-10 transform hover:-translate-x-1"> 
-          DONATE NOW
-        </button>
-        <div class="absolute inset-0 bg-orange-500 opacity-80"></div>
-      </div>
-      <div class="relative bg-[url('/images/volunteerimg.jpg')] bg-cover bg-center p-8 text-white min-h-[100px]
-        flex flex-col items-start text-left"> 
-        <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
-          <i class="fas fa-users text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-2 z-10">VOLUNTEER</h3>
-        <p class="mb-4 z-10 max-w-[80%]">There are many variations of lorem passage of Lorem Ipsum available</p> 
-    
-        <button onclick="openJoinForm()"
-          class="joinnowbtn border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500 
-          transition z-10 transform hover:-translate-x-1">
-          JOIN NOW
-        </button>
-        <div class="absolute inset-0 bg-orange-500 opacity-80"></div>
-      </div>
-      <div class="relative bg-[url('/images/fundraiserimg.jfif')] bg-cover bg-center p-8 text-white min-h-[100px]
-        flex flex-col items-start text-left"> 
-        <div class="bg-white text-orange-500 w-10 h-10 rounded-full mb-4 z-10 flex items-center justify-center">
-          <i class="fas fa-heart text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold mb-2 z-10">FUNDRAISE</h3>
-        <p class="mb-4 z-10 max-w-[80%]">There are many variations of lorem passage of Lorem Ipsum available</p>
-       
-        <button
-          class="readmore-btn border border-white px-4 py-2 rounded hover:bg-white hover:text-orange-500
-          transition z-10 transform hover:-translate-x-1"> 
-          READ MORE
-        </button>
-        <div class="absolute inset-0 bg-orange-500 opacity-80"></div>
-      </div>
-    </div>
-  </div>
-</section>  -->
-
-  <section class="relative pb-64 ">
-    <div class="absolute left-1/2 -translate-x-1/2 -top-1/3 w-full max-w-5xl px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 text-white font-poppins shadow-xl">
-        <div class="bg-[#16232e] p-10 min-h-[300px] flex flex-col justify-between">
+  <section class="relative pb-54 text-gray-400 font-poppins text-sm leading-6 w-full ">
+    <!-- <div class="absolute left-1/2 -translate-x-1/2 -top-2/3 w-full container  px-4"> -->
+    <div class="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-3/3 w-full container px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 text-white font-poppins shadow-xl flex flex-col justify-between h-full
+">
+        <div class="bg-[#16232e] p-10 min-h-[100px] flex flex-col justify-between">
           <div>
             <h3 class="text-2xl font-bold mb-4">DONATE NOW</h3>
-            <p class="text-sm leading-relaxed text-gray-300">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore voluptates voluptatibus
-              aperiam delectus repellat modi, blanditiis praesentium
-              quod sapiente cupiditate veniam. Nisi asperiores unde, temporibus repellat iste earum itaque.
+            <p class="text-sm leading-relaxed text-white">
+              There are a huge number of people, especially children and women, deprived of proper nutrition,
+              educational,
+              and residential facilities.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum tempore voluptates aperiam delectus
+              repellat modi, blanditiis praesentium quod sapiente.
             </p>
           </div>
           <button
@@ -447,95 +360,120 @@
             Donate Now
           </button>
         </div>
-        <div class="bg-[#b59b5c] p-10 min-h-[300px] flex flex-col justify-between">
+        <div class="bg-[#b59b5c] p-10 min-h-[100px] flex flex-col justify-between">
           <div>
             <h3 class="text-2xl font-bold mb-4">JOIN US</h3>
-            <p class="text-sm leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore voluptates voluptatibus
-              aperiam delectus repellat modi, blanditiis praesentium
-              quod sapiente cupiditate veniam. Nisi asperiores unde, temporibus repellat iste earum itaque.
+            <p class="text-sm leading-relaxed text-white">
+              We cant change the world without your help. Thousands of kind hearted people around the Globe are
+              contributing by
+              Volunteering on such works. Some of them are joining physicaly and remotely.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum tempore voluptates aperiam delectus
+              repellat modi, blanditiis praesentium quod sapiente.
             </p>
           </div>
           <button onclick="openJoinForm()"
-            class="border border-white px-6 py-2 w-max hover:bg-white hover:text-black transition">
+            class="border border-white mt-6 px-6 py-2 w-max hover:bg-white hover:text-black transition">
             Join Us
           </button>
         </div>
-        <!-- bg-[#e14b3b] -->
-        <div class="bg-orange-500 p-10 min-h-[300px] flex flex-col justify-between">
+        <div class="bg-orange-500 p-10 min-h-[100px] flex flex-col justify-between">
           <div>
             <h3 class="text-2xl font-bold mb-4">GET INVOLVED</h3>
-            <p class="text-sm leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempore voluptates voluptatibus
-              aperiam delectus repellat modi, blanditiis praesentium
-              quod sapiente cupiditate veniam. Nisi asperiores unde, temporibus repellat iste earum itaque.
+            <p class="text-sm leading-relaxed text-white">
+              There are millions of children deprived of education. Their society is not able to arrange such
+              facilities.
+              Moreover, they are not able to get proper nutrition to live a healthy life.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum tempore voluptates aperiam delectus
+              repellat modi, blanditiis praesentium quod sapiente.
             </p>
           </div>
           <button
-            class="volunteerBtn mt-6 border border-white px-6 py-2 w-max hover:bg-white hover:text-black transition">
+            class="volunteer-btn mt-6 border border-white  btn btn-secondary px-6 py-2 w-max hover:bg-white hover:text-black transition">
             Become a Volunteer
           </button>
         </div>
-
       </div>
     </div>
   </section>
+
   <!--Become a part of the world -->
-  <section class="bg-white py-16 font-poppins ">
-    <div class="container mx-auto px-4 border-3 border-solid border-[#dbdbdb] min-h-[450px]">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <section class="relative z-10 bg-white py-16 font-poppins">
+    <div class="container mx-auto px-4  md:min-h-[450px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center gap-10
+">
         <div>
-          <h2 class="text-3xl md:text-3xl font-semibold text-gray-900 mb-4">
-            Become a part of <span class="font-bold text-4xl">the world</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-orange-600 mb-4 text-center md:text-left leading-[40px]">
+            <!-- Become a part of <span class="text-4xl md:text-5xl font-bold">the world</span> -->
+            What We Do
           </h2>
-          <!-- <div class="w-120 h-[2px] bg-gray-300 my-4"></div>  -->
-          <p class="text-gray-600 leading-relaxed mb-6 font-poppins text-lg text-lg/8">
+          <p class="text-gray-700 leading-relaxed mb-6 text-lg md:text-lg">
+            Millions of children worldwide are deprived of basic education and proper nutrition. Many lack access to
+            primary education and the resources needed for a healthy life.
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-6 text-lg md:text-lg">
+            At Hope for All, we work to dissolve these barriers through sustainable programs that address both immediate
+            needs and long-term development.
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-6 text-lg md:text-lg">
+            Our charity organization provides essential services to improve educational opportunities and nutritional
+            support for underprivileged children, creating lasting change in their communities.
+          </p>
+          <!-- <p class="text-gray-700 leading-relaxed mb-6 text-lg md:text-lg">
             It’s not a wonder that there are millions of children deprived of education.
             They are able to get proper education, even at the primary level.
             Their society is not able to arrange such facilities. Moreover, they are not
             able to get proper nutrition to live a healthy life.
           </p>
-          <p class="text-gray-600 leading-relaxed mb-8 font-poppins text-lg  text-lg/8">
+          <p class="text-gray-700 leading-relaxed mb-8 text-lg md:text-lg">
             But these miseries can be dissolved easily by following some simple facts.
             Charity organizations are doing a great service for society by improving
             the condition of helpless children’s education and nutritional conditions.
           </p>
+          <p class="text-gray-700 leading-relaxed mb-8 text-lg md:text-lg">
+            But these miseries can be dissolved easily by following some simple facts.
+            Charity organizations are doing a great service for society by improving
+            the condition of helpless children’s education and nutritional conditions.......
+          </p> -->
           <div class="flex justify-end">
-            <a href="readmore" class="inline-flex items-center text-orange-500 font-medium hover:underline">
-              Read More...
+            <a href="#readmore"  aria-label="Description" class="inline-flex items-center text-orange-500 font-medium hover:underline">
+              View more works
               <span class="ml-2"><i class="fa-solid fa-chevron-right fa-2xs"></i></span>
             </a>
           </div>
         </div>
-        <div class="relative rounded-xl overflow-hidden shadow-lg mt-6">
-          <video class="w-full h-full object-cover" controls
-            poster="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-            <source
-              src="https://cdn.videvo.net/videvo_files/video/free/2015-07/large_watermarked/Underwater_01_Videvo_preview.mp4"
-              type="video/mp4">
+        <div class="relative rounded-xl overflow-hidden shadow-lg mt-6 md:mt-0 aspect-video">
+          <video class="w-full h-full object-cover" controls autoplay muted loop playsinline preload="metadata"
+            poster="images/video-poster.jpg" aria-label="Video showing our charity work in communities">
+            <source src="videos/our-work.mp4" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/853889/853889-hd_1280_720_25fps.mp4" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video.
+              <a href="videos/our-work.mp4">Download the video</a> instead.
+            </p>
           </video>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
   <!-- stats -->
-  <div class="relative py-12 sm:py-12 overflow-hidden bg-[url('images/banner1.jpg')] bg-cover bg-center font-poppins">
+  <section
+    class="relative py-12 sm:py-12 overflow-hidden bg-[url('images/banner1.jpg')] bg-cover bg-center font-poppins">
     <div class="absolute inset-0 bg-black/60"></div>
-    <div class="relative mx-auto container px-6 lg:px-8">
+    <div class="relative mx-auto container px-6 lg:px-8 flex flex-col text-center
+">
       <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
         <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt class="text-base text-gray-300 font-bold">
-           Donation Made
+          <dt class=" text-gray-300 font-bold justify-between">
+            Donation Made
           </dt>
           <dd class="order-first text-3xl font-semibold text-orange-600 sm:text-5xl">
-           <i class="fa-solid fa-droplet fa-sm text-orange-600 justify-center"></i>
-           12353
+            <i class="fa-solid fa-droplet fa-sm text-orange-600 justify-center"></i>
+            12353
           </dd>
         </div>
         <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt class="text-base text-gray-300 font-bold">
-            Happy chilren
+          <dt class=" text-gray-300 font-bold justify-between">
+            Happy chilfren
           </dt>
           <dd class="order-first text-3xl font-semibold text-red-400 sm:text-5xl">
             <i class="fa-regular fa-face-smile fa-sm text-red-400"></i>
@@ -544,28 +482,28 @@
         </div>
 
         <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt class="text-base text-gray-300 font-bold">
+          <dt class=" text-gray-300 font-bold justify-between">
             Volunteering Helpers
           </dt>
           <dd class="order-first text-3xl font-semibold text-yellow-600 sm:text-5xl">
             <i class="fa-solid fa-handshake-angle fa-sm text-yellow-600"></i>
-           2343
+            2343
           </dd>
         </div>
 
         <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-          <dt class="text-base text-gray-300 font-bold">
+          <dt class=" text-gray-300 font-bold justify-between">
             Educated Helpers
           </dt>
           <dd class="order-first text-3xl font-semibold text-green-400 sm:text-5xl">
             <i class="fa-solid fa-book fa-sm text-green-400"></i>
-           32123
+            32123
           </dd>
         </div>
 
       </dl>
     </div>
-  </div>
+  </section>
   <!-- recent causes -->
   <section class="bg-gray-50 py-16 font-poppins">
     <div class="text-center mb-12">
@@ -575,7 +513,7 @@
       <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
     </div>
     <div class="container mx-auto px-6">
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="relative">
             <img src="images/child1.jpeg" alt="child" class="w-full h-56 object-cover">
@@ -588,7 +526,7 @@
           </div>
           <div class="pt-10 px-6 pb-6">
             <h3 class="font-bold text-lg mb-2">
-              SPONSOR A CHILD TODAY
+              Sponsor Education for Children
             </h3>
             <p class="text-sm mb-3">
               <span class="text-gray-500">Raised:</span>
@@ -597,25 +535,28 @@
               <span class="text-orange-500 font-semibold">Goal: $2500</span>
             </p>
             <p class="text-gray-600 text-sm mb-6">
+              Support our daily school meal program that feeds 300+ children in food-insecure communities. Proper
+              nutrition improves concentration, attendance, and overall health.
               Lorem ipsum dolor sit amet, consectetur ambo elit. Numquam repellendus est rerum sed, aliquid aut
               inventore.
             </p>
             <div class="flex gap-3">
               <button
-                class="donate-btn bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-orange-600 transition">
+                class="donate-btn bg-orange-500 text-white  btn btn-primary px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-600 transition">
                 DONATE NOW
               </button>
-              <button class="border border-orange-500 text-orange-500 px-2 py-2 rounded-full text-sm font-medium 
+              <button class="border border-orange-500 text-orange-500  btn btn-secondary px-6 py-2 rounded-full text-sm font-medium 
                 hover:bg-orange-50 transition">
                 <i class="fa-regular fa-heart"></i>
-                <a href="donators"> 25 DONATORS</a>
+                <a href="donation.html"> 25 DONATORS</a>
               </button>
             </div>
           </div>
         </div>
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="relative">
-            <img src="images/child2.jpg" class="w-full h-56 object-cover">
+            <img src="images/child3.jpg" class="w-full h-56 object-cover" alt="child3">
+
             <div class="absolute -bottom-6 left-1/2 -translate-x-1/2">
               <div
                 class="w-14 h-14 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-semibold ring-4 ring-white">
@@ -624,31 +565,35 @@
             </div>
           </div>
           <div class="pt-10 px-6 pb-6">
-            <h3 class="font-bold text-lg mb-2">SPONSOR A CHILD TODAY</h3>
+            <h3 class="font-bold text-lg mb-2"> Provide Nutrious School Meals</h3>
             <p class="text-sm mb-3">
-              <span class="text-gray-500">Raised:</span> $1800
+              <span class="text-gray-500">Raised:</span>
+              <span class="font-semibold">$1800</span>
+              &nbsp;&nbsp;
               <span class="text-orange-500 font-semibold ml-2">Goal: $2500</span>
             </p>
             <p class="text-gray-600 text-sm mb-6">
+              Provide school supplies, uniforms, and tuition for children in rural areas who cannot afford basic
+              education. Your donation helps break the cycle of poverty through learning.
               Lorem ipsum dolor sit amet, consectetur ambo elit. Numquam repellendus est rerum sed, aliquid aut
               inventore.
             </p>
 
             <div class="flex gap-3">
-              <button class="donate-btn bg-orange-500 text-white px-4 py-2 rounded-full text-sm">
+              <button class="donate-btn bg-orange-500 text-white  btn btn-primary px-6 py-2 rounded-full text-sm">
                 DONATE NOW
               </button>
               <button
-                class="border border-orange-500 text-orange-500 px-2 py-2 rounded-full text-sm font-medium hover:bg-orange-50">
+                class="border border-orange-500 text-orange-500  btn btn-secondary px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-50">
                 <i class="fa-regular fa-heart"></i>
-                <a href="donators">25 DONATORS</a>
+                <a href="donation.html">25 DONATORS</a>
               </button>
             </div>
           </div>
         </div>
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="relative">
-            <img src="images/child3.jpg" class="w-full h-56 object-cover">
+            <img src="images/child2.jpg" class="w-full h-56 object-cover" alt="child">
             <div class="absolute -bottom-6 left-1/2 -translate-x-1/2">
               <div class="w-14 h-14 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm
              font-semibold ring-4 ring-white">
@@ -657,24 +602,29 @@
             </div>
           </div>
           <div class="pt-10 px-6 pb-6">
-            <h3 class="font-bold text-lg mb-2">SPONSOR A CHILD TODAY</h3>
+            <h3 class="font-bold text-lg mb-2">Safe Playground & Learning Center</h3>
             <p class="text-sm mb-3">
-              <span class="text-gray-500">Raised:</span> $1890
+              <span class="text-gray-500">Raised:</span>
+              <span class="font-semibold">$1890</span>
+              &nbsp;&nbsp;
               <span class="text-orange-500 font-semibold ml-2">Goal: $2500</span>
             </p>
             <p class="text-gray-600 text-sm mb-6">
-              Lorem ipsum dolor sit amet, consectetur ambo elit. Numquam repellendus est rerum sed, aliquid aut
+              Help build a safe outdoor playground and after-school learning center where children can play, study, and
+              develop social skills in a secure environment.
+              Lorem ipsum dolor sit amet, consectetur ambo elit. .Lorem ipsum dolor sit amet, consectetur ambo elit.
+              Numquam repellendus est rerum sed, aliquid aut
               inventore.
             </p>
 
             <div class="flex gap-3">
-              <button class="donate-btn bg-orange-500 text-white px-4 py-2 rounded-full text-sm">
+              <button class="donate-btn bg-orange-500 text-white  btn btn-primary px-6 py-2 rounded-full text-sm">
                 DONATE NOW
               </button>
               <button
-                class="border border-orange-500 text-orange-500 px-2 py-2 rounded-full text-sm font-medium hover:bg-orange-50">
+                class="border border-orange-500 text-orange-500  btn btn-secondary px-6 py-2 rounded-full text-sm font-medium hover:bg-orange-50">
                 <i class="fa-regular fa-heart"></i>
-                <a href="donators">25 DONATORS</a>
+                <a href="donation.html">25 DONATORS</a>
               </button>
             </div>
           </div>
@@ -687,51 +637,141 @@
   flex items-center justify-center font-poppins">
     <div class="absolute inset-0 bg-slate-900/70"></div>
     <div class="relative z-10 max-w-4xl text-center px-6 text-white">
-      <!-- <span class="inline-block bg-orange-500 text-white text-xs font-semibold px-4 py-2 rounded mb-6">
-        BECOME A VOLUNTEER
-      </span> -->
-      <button class="volunteerBtn inline-block bg-orange-500 text-white text-sm font-semibold px-8 py-2 rounded-full
+      <h3 class="text-sm md:text-4xl font-extrabold uppercase leading-tight mb-6 mt-4">
+        NO ONE HAS EVER BECOME POOR <br />
+        <span class="block mt-2 text-orange-400"> BY GIVING</span>
+      </h3>
+      <p class="text-gray-300 max-w-2xl mx-auto mb-10">
+        Every act of generosity creates ripples of hope that transform lives. When we come together to support those in
+        need, we don't just give resources—we give opportunities, dignity, and brighter futures. Your compassion has the
+        power to uplift communities and create lasting change.
+      </p>
+      <button class="volunteer-btn inline-block bg-orange-500 text-white text-sm font-semibold btn btn-secondary px-6 py-2 rounded-full
          mb-6 hover:bg-orange-600 transition">
         BECOME A VOLUNTEER
       </button>
-      <h3 class="text-sm md:text-4xl font-extrabold uppercase leading-tight mb-6">
-        NO ONE HAS EVER BECOME POOR <br />
-        <span class="block mt-2"> BY GIVING</span>
-      </h3>
-      <p class="text-gray-300 max-w-2xl mx-auto mb-10">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
-        voluptates minima ullam est omnis quo libero voluptatum itaque eum accusamus facilis
-        debitis vero impedit adipisci soluta pariatur perspiciatis fugiat non?
-      </p>
       <a href="#"
-        class="inline-block border border-white px-8 py-2 text-sm font-semibold uppercase rounded-full hover:bg-white hover:text-black transition">
+        class="inline-block border border-white  btn btn-outline px-6 py-2 text-sm font-semibold uppercase rounded-full hover:bg-white hover:text-black transition">
         Get Involved Now
       </a>
     </div>
   </section>
   <!-- subscriptiion -->
-  <section class="bg-orange-600 font-poppins">
+  <section class="bg-[#af9659] font-poppins">
     <div class="container mx-auto px-6 py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <div class="text-white text-center">
           <h2 class="text-2xl md:text-3xl font-bold mb-2 uppercase">
-            Subscribe to HopeForAll
+            YOUR DONATIONS SUPPORT OUR CRITICAL WORK
           </h2>
-          <p class="text-white/90 ml-6">
-            Sign up with your email address to receive news and updates
-          </p>
         </div>
         <form class="flex flex-col sm:flex-row items-stretch w-full max-w-xl md:ml-auto">
-          <input type="email" placeholder="your email address... *" class=" px-4 py-3 text-white outline-none border "
-            required />
-          <button type="submit"
-            class="bg-white text-orange-600 font-semibold px-8 py-3 hover:bg-gray-100 transition uppercase">
-            Subscribe
+          <button type="button" class="donate-btn border border-solid text-white font-semibold  btn btn-primary px-6 py-2 
+            hover:bg-white hover:text-orange-600 transition uppercase">
+            MAKE A DONATION
           </button>
+
         </form>
       </div>
     </div>
   </section>
+  <!-- Latest stories -->
+  <section class=" py-16 font-poppins">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">
+          Latest Stories
+        </h2>
+        <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
+      </div>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <div class="relative">
+            <img src="images/child1.jpeg" alt="Story1" class="w-full h-56 object-cover">
+          </div>
+
+          <div class="px-6 py-6">
+            <div class="flex items-center text-gray-600 text-sm mb-3">
+              <span class="flex items-center gap-1 text-gray-600">
+                <i class="fa-regular fa-calendar text-orange-600"></i> 
+                5th Jan, 2026
+              </span>
+              <span class="mx-2">|</span>
+              <span class="flex items-center gap-1">
+                <i class="fa-solid fa-building text-orange-600"></i> NGO
+              </span>
+            </div>
+
+            <h3 class="font-bold text-lg mb-3">
+              Our community project empowers local schools
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              We recently launched a project aimed at providing better educational
+              resources and support to underprivileged schools in the region.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <div class="relative">
+            <img src="images/banner6.jpg" alt="Story 2" class="w-full h-56 object-cover">
+          </div>
+
+          <div class="px-6 py-6">
+            <div class="flex items-center text-gray-600 text-sm mb-3">
+              <span class="flex items-center gap-1">
+                <i class="fa-regular fa-calendar text-orange-600"></i> 4th Jan, 2026
+              </span>
+              <span class="mx-2">|</span>
+              <span class="flex items-center gap-1">
+                <i class="fa-solid fa-building text-orange-600"></i> NGO
+              </span>
+            </div>
+
+            <h3 class="font-bold text-lg mb-3">
+              Volunteers join hands for winter campaign
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Our volunteers worked tirelessly to provide winter essentials
+              to children and families in need, spreading warmth and hope.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <div class="relative">
+            <img src="images/banner1.jpg" alt="Story 3" class="w-full h-56 object-cover">
+          </div>
+
+          <div class="px-6 py-6">
+            <div class="flex items-center text-gray-600 text-sm mb-3 ">
+              <span class="flex items-center gap-1 ">
+                <i class="fa-regular fa-calendar text-orange-600"></i> 2nd Jan, 2026
+              </span>
+              <span class="mx-2">|</span>
+              <span class="flex items-center gap-1">
+                <i class="fa-solid fa-building text-orange-600"></i> NGO
+              </span>
+            </div>
+
+            <h3 class="font-bold text-lg mb-3">
+              New educational resources distributed in schools
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              We successfully distributed new books and learning materials
+              to multiple schools, helping children access quality education.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- meet volunteerss -->
   <section class="py-20 bg-white font-poppins">
     <div class="container mx-auto px-4">
@@ -742,73 +782,91 @@
         <div class="w-16 h-1 bg-orange-500 mx-auto"></div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
         <div class="group bg-white">
           <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/vol1.jpg" class="w-full h-80 object-cover " />
+            <img src="images/vol1.jpg" loading="lazy" class="w-full h-80 object-cover "
+              alt="Jannatul Ferdous - Education Program Coordinator" />
             <div class="absolute inset-0 bg-orange-500/80 flex items-center justify-center gap-3
                       opacity-0 group-hover:opacity-100 transition">
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 "><i class="fab fa-facebook-f"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-twitter"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-linkedin-in"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100">
+                <i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100">
+                <i class="fab fa-twitter"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100">
+                <i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100">
+                <i class="fab fa-google-plus-g"></i></a>
             </div>
           </div>
           <div class="pt-6">
             <h3 class="text-lg font-bold">Jannatul Ferdous</h3>
-            <span class="text-orange-500 text-sm block mb-4">Businessman</span>
+            <span class="text-orange-500 text-sm block mb-4">Education Program Coordinator</span>
             <p class="text-gray-500 text-sm mb-6">
-              Lorem ipsum dolor sit amet, sea dolor essent nostrud no,
-              pro no vidit aeternum mediocritatem.
+              Jannatul has been leading our after-school tutoring program for 3 years, helping over 200 children improve
+              their literacy and numeracy.
             </p>
-            <a href="volunteer profile"
-              class="inline-block border px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500 hover:text-white transition">
+            <a href="volunteer-profile.html"
+              class="inline-block border border-orange-500 px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500 hover:text-white transition">
               VIEW PROFILE
             </a>
           </div>
         </div>
+
+
         <div class="group bg-white">
           <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/vol2.jpg" class="w-full h-80 object-cover" />
+            <img src="images/vol2.jpg" loading="lazy" class="w-full h-80 object-cover"
+              alt="Ashikur Rahman - Fundraising Director" />
             <div
               class="absolute inset-0 bg-orange-500/80 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition">
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-facebook-f"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-twitter"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-linkedin-in"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-google-plus-g"></i></a>
             </div>
           </div>
           <div class="pt-6">
             <h3 class="text-lg font-bold">Ashikur Rahman</h3>
-            <span class="text-orange-500 text-sm block mb-4">Businessman</span>
+            <span class="text-orange-500 text-sm block mb-4">Fundraising Director</span>
             <p class="text-gray-500 text-sm mb-6">
-              Lorem ipsum dolor sit amet, sea dolor essent nostrud no,
-              pro no vidit aeternum mediocritatem.
+              With a background in finance, Ashikur has helped raise over $500,000 for our programs, connecting donors
+              with impactful initiatives.
             </p>
-            <a href="volunteer profile"
-              class="inline-block border px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500 hover:text-white transition">
+            <a href="volunteer-profile.html"
+              class="inline-block border border-orange-500 px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500 hover:text-white transition">
               VIEW PROFILE
             </a>
           </div>
         </div>
         <div class="group bg-white">
           <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/vol3.avif" class="w-full h-80 object-cover" />
+            <img src="images/vol3.avif" loading="lazy" class="w-full h-80 object-cover"
+              alt="Jannat Ferdous - Community Outreach Specialist" />
             <div class="absolute inset-0 bg-orange-500/80 flex items-center justify-center gap-3
                       opacity-0 group-hover:opacity-100 transition">
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-facebook-f"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-twitter"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-linkedin-in"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-google-plus-g"></i></a>
             </div>
           </div>
           <div class="pt-6">
             <h3 class="text-lg font-bold">Jannat Ferdous</h3>
-            <span class="text-orange-500 text-sm block mb-4">Businessman</span>
+            <span class="text-orange-500 text-sm block mb-4">Community Outreach Specialist</span>
             <p class="text-gray-500 text-sm mb-6">
-              Lorem ipsum dolor sit amet, sea dolor essent nostrud no,
-              pro no vidit aeternum mediocritatem.
+              Jannat builds partnerships with local communities, ensuring our programs address real needs. She's fluent
+              in 3 regional.
             </p>
-            <a href="volunteer profile" class="inline-block border px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500
+            <a href="volunteer-profile.html" class="inline-block border border-orange-500 px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500
                hover:text-white transition">
               VIEW PROFILE
             </a>
@@ -816,23 +874,28 @@
         </div>
         <div class="group bg-white">
           <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/vol4.webp" class="w-full h-80 object-cover" />
+            <img src="images/vol4.webp" loading="lazy" class="w-full h-80 object-cover"
+              alt="Aisha Rahman - Medical Volunteer Coordinator" />
             <div class="absolute inset-0 bg-orange-500/80 flex items-center justify-center gap-3
                       opacity-0 group-hover:opacity-100 transition">
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-facebook-f"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-twitter"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-linkedin-in"></i></a>
-              <a class="bg-white text-orange-500 p-2 rounded-full w-8 h-8"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="bg-white text-orange-500 p-2 rounded-full w-8 h-8 hover:bg-gray-100"><i
+                  class="fab fa-google-plus-g"></i></a>
             </div>
           </div>
           <div class="pt-6">
-            <h3 class="text-lg font-bold">Ashi sahahman</h3>
-            <span class="text-orange-500 text-sm block mb-4">Businessman</span>
+            <h3 class="text-lg font-bold">Aisha Rahman</h3>
+            <span class="text-orange-500 text-sm block mb-4">Medical Volunteer Coordinator</span>
             <p class="text-gray-500 text-sm mb-6">
-              Lorem ipsum dolor sit amet, sea dolor essent nostrud no,
-              pro no vidit aeternum mediocritatem.
+              A certified nurse, Aisha leads our mobile medical camps, providing free healthcare to remote villages and
+              training local health .
             </p>
-            <a href="volunteer profile" class="inline-block border px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500
+            <a href="volunteer-profile.html" class="inline-block border border-orange-500 px-6 py-2 rounded-full text-sm font-semibold hover:bg-orange-500
                hover:text-white transition">
               VIEW PROFILE
             </a>
@@ -851,15 +914,17 @@
         <div class="w-16 h-1 bg-orange-500 mx-auto"></div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="border border-gray-200">
-          <img src="images/water1.jpg" class="w-full h-52 object-cover " />
+        <div class="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+          <img src="images/water1.jpg" alt="Community clean water well installation in rural village" width="400"
+            height="300" loading="lazy" class="w-full h-52 object-cover"
+            alt="Community clean water well installation" />
           <div class="p-4">
             <h3 class="font-semibold text-lg mb-3">
-              Help to get water
+              Clean Water for Rural Villages
             </h3>
             <p class="text-gray-500 text-sm mb-5 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+              Installing sustainable water filtration systems and wells in 5 remote villages, providing safe drinking
+              water to over 2,500 residents who currently walk miles daily for contaminated water.
             </p>
 
             <p class="text-sm text-gray-400 mb-4">
@@ -871,16 +936,16 @@
             </div>
           </div>
         </div>
-        <div class="border border-gray-200">
-          <img src="images/child1.jpeg" class="w-full h-52 object-cover " />
+        <div class="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+          <img src="images/child1.jpeg" class="w-full h-52 object-cover" alt="Children learning in classroom" />
           <div class="p-4">
             <h3 class="font-semibold text-lg mb-3">
-              Help for education of kids
+              Back to School Program
             </h3>
 
             <p class="text-gray-500 text-sm mb-5 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+              Providing school supplies, uniforms, and tuition assistance for 300 underprivileged children, with a focus
+              on girls' education and after-school tutoring to prevent dropouts.
             </p>
 
             <p class="text-sm text-gray-400 mb-4">
@@ -893,16 +958,16 @@
             </div>
           </div>
         </div>
-        <div class="border border-gray-200">
-          <img src="images/food1.webp" class="w-full h-52 object-cover " />
+        <div class="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+          <img src="images/food1.webp" class="w-full h-52 object-cover" alt="Volunteers distributing food packages" />
           <div class="p-4">
             <h3 class="font-semibold text-lg mb-3">
-              Spend food
+              Emergency Food Relief
             </h3>
 
             <p class="text-gray-500 text-sm mb-5 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+              Monthly food distribution for 500+ families affected by recent floods, plus nutrition education and
+              kitchen garden initiatives to promote long-term food security.
             </p>
 
             <p class="text-sm text-gray-400 mb-4">
@@ -915,16 +980,17 @@
             </div>
           </div>
         </div>
-        <div class="border border-gray-200">
-          <img src="images/house1.jpg" class="w-full h-52 object-cover" />
+        <div class="border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+          <img src="images/house1.jpg" class="w-full h-52 object-cover"
+            alt="Newly constructed disaster-resistant home" />
           <div class="p-4">
             <h3 class="font-semibold text-lg mb-3">
-              Spend for houses
+              Disaster-Resilient Housing
             </h3>
 
             <p class="text-gray-500 text-sm mb-5 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+              Building 25 cyclone-resistant homes for families displaced by natural disasters, using sustainable local
+              materials and involving community members in construction.
             </p>
 
             <p class="text-sm text-gray-400 mb-4">
@@ -958,11 +1024,7 @@
           Providing support and resources to improve the lives of individuals
           and families in need.
         </p>
-        <div class="flex justify-end">
-          <a href="readmore" class="mt-2 text-orange-500 text-bold">Readmore
-            <i class="fa-solid fa-chevron-right fa-2xs"></i>
-          </a>
-        </div>
+
       </div>
       <div class="bg-white shadow-md rounded-lg p-4">
         <div class="text-orange-500 text-4xl mb-4">
@@ -973,11 +1035,7 @@
           Empowering communities through education, awareness, and skill
           development programs.
         </p>
-        <div class="flex justify-end">
-          <a href="readmore" class="mt-2 text-orange-500 text-bold">Readmore
-            <i class="fa-solid fa-chevron-right fa-2xs"></i>
-          </a>
-        </div>
+
       </div>
       <div class="bg-white shadow-md rounded-lg p-4">
         <div class="text-orange-500 text-4xl mb-4">
@@ -988,11 +1046,7 @@
           Serving with kindness and empathy to create hope and positive
           social change.
         </p>
-        <div class="flex justify-end">
-          <a href="readmore" class="mt-2 text-orange-500 text-bold">Readmore
-            <i class="fa-solid fa-chevron-right fa-2xs"></i>
-          </a>
-        </div>
+
       </div>
       <div class="bg-white shadow-md rounded-lg p-4">
         <div class="text-orange-500 text-4xl mb-4">
@@ -1003,11 +1057,7 @@
           Providing support and resources to improve the lives of individuals
           and families in need.
         </p>
-        <div class="flex justify-end">
-          <a href="readmore" class="mt-2 text-orange-500 text-bold">Readmore
-            <i class="fa-solid fa-chevron-right fa-2xs"></i>
-          </a>
-        </div>
+
       </div>
       <div class="bg-white shadow-md rounded-lg p-4">
         <div class="text-orange-500 text-4xl mb-4">
@@ -1017,12 +1067,7 @@
         <p class="text-gray-600">
           Empowering communities through education, awareness, and skill
           development programs.
-        </p>
-        <div class="flex justify-end">
-          <a href="readmore" class="mt-2 text-orange-500 text-bold">Readmore
-            <i class="fa-solid fa-chevron-right fa-2xs"></i>
-          </a>
-        </div>
+
       </div>
       <div class="bg-white shadow-md rounded-lg p-4">
         <div class="text-orange-500 text-4xl mb-4">
@@ -1033,15 +1078,16 @@
           Serving with kindness and empathy to create hope and positive
           social change.
         </p>
-        <div class="flex justify-end">
+        <!-- <div class="flex justify-end">
           <a href="readmore" class="mt-2 text-orange-500 text-bold">Readmore
             <i class="fa-solid fa-chevron-right fa-2xs"></i>
           </a>
-        </div>
+        </div> -->
       </div>
 
     </div>
   </div>
+ 
   <!-- contactus -->
   <div class="max-w-4xl mx-auto px-4 font-poppins">
     <div class="text-center mb-8">
@@ -1051,13 +1097,16 @@
     <div class="bg-white shadow-md rounded-lg p-6">
       <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="relative">
-          <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="text" placeholder="Your Name" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded-full
+          <label for="contact-name" class="sr-only">Your Full Name</label>
+          <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" aria-hidden="true"></i>
+          <input id="contact-name" name="name" type="text" placeholder="Your Name" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded-full
                focus:outline-none focus:border-orange-500" required />
         </div>
+
         <div class="relative">
+          <label for="contact-email" class="sr-only">Email Adreess</label>
           <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-          <input type="email" placeholder="Your Email" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded-full
+          <input id="contact-email" name="email" type="email" placeholder="Your Email" class="w-full border border-gray-300 pl-12 pr-4 py-2.5 rounded-full
                focus:outline-none focus:border-orange-500" required />
         </div>
         <div class="relative md:col-span-2">
@@ -1072,102 +1121,112 @@
         </div>
         <div class="md:col-span-2 text-center">
           <button type="submit"
-            class="bg-orange-500 text-white px-10 py-2.5 rounded-full font-semibold uppercase hover:bg-orange-600 transition">
+            class="bg-orange-500 text-white  btn btn-secondary px-6 py-2 rounded-full font-semibold uppercase hover:bg-orange-600 transition">
             Send Message
           </button>
         </div>
       </form>
-      <p id="successMsg" class="text-green-600 font-semibold text-center mt-4 hidden">
-        <i class="fa-solid fa-check"></i> Your message has been sent successfully!
+      <p class="successMsg text-green-600 font-semibold text-center mt-4 hidden">
+        <i class="fa-solid fa-check"></i>
+        Your message has been sent successfully!we'll reach out to you soon.
       </p>
     </div>
   </div>
-  <!-- locatiom -->
-  <div class="text-center mt-5 mb-8 font-poppins">
-    <h2 class="text-3xl font-bold uppercase mb-2">OUR LOCATION</h2>
-    <div class="w-16 h-1 bg-orange-500 mx-auto"></div>
-  </div>
-  <div class="w-full h-56 rounded-lg overflow-hidden border border-white/10 ">
-    <iframe class="w-full h-full" src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-  <!-- sponsors -->
-  <section class="py-16 bg-gray-50">
+   <!-- sponsors -->
+  <section class="py-16  mt-10 mb-10">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-3xl font-bold uppercase">Our Sponsors</h2>
+        <h2 class="text-3xl md:text-3xl font-bold uppercase">Our Trusted Partners</h2>
         <div class="w-20 h-1 bg-orange-600 mx-auto mt-3"></div>
       </div>
       <div class="relative overflow-hidden">
         <div id="sponsor-track" class="flex gap-8 items-center transition-transform duration-700 ease-linear">
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-1.webp" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logon-1.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-2.webp" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logo-5.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-3.webp" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logon-4.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-4.webp" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logo-6.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-5.png" class="h-8 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logon-3.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-6.png" class="h-8 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logo-7.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-7.png" class="h-8 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logon-2.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-8.png" class="h-8 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logo-8.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-5.png" class="h-8 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logon-4.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
           </div>
           <div class="min-w-[160px] flex justify-center">
-            <img src="images/logo-6.png" class="h-8 object-contain grayscale hover:grayscale-0 transition" />
+            <img src="images/logo-5.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logon-4.png" class="h-16 object-contain grayscale hover:grayscale-0  transition" />
+          </div>
+          <div class="min-w-[160px] flex justify-center">
+            <img src="images/logo-6.png" class="h-8 object-contain grayscale hover:grayscale-0  transition" />
           </div>
         </div>
       </div>
 
     </div>
-    <div class="flex justify-center items-center mt-5 ">
+    <!-- <div class="flex justify-center items-center mt-5 ">
       <button class="sponsorBtn inline-block bg-orange-500 text-white text-sm font-semibold px-8 py-2 rounded-full
          mb-6 hover:bg-orange-600 transition">
         BECOME A SPONSOR
       </button>
-    </div>
+    </div> -->
   </section>
+  <!-- locatiom -->
+  <!-- <div class="text-center mt-10 mb-8 font-poppins">
+    <h2 class="text-3xl font-bold uppercase mb-2">OUR LOCATION</h2>
+    <div class="w-16 h-1 bg-orange-500 mx-auto"></div>
+  </div> -->
+  <div class="w-full h-96 rounded-lg overflow-hidden border border-white/10 ">
+    <iframe class="w-full h-full" src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+ 
   <!-- footer -->
-  <footer class=" bg-[#262f36] text-gray-400 font-poppins">
-    <!-- bg-gradient-to-b from-slate-900 to-slate-800  -->
+  <footer class="bg-[#262f36] text-gray-400 font-poppins">
     <div class="container mx-auto px-6 py-16">
       <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <h3 class="text-white font-semibold mb-4">ABOUT US</h3>
           <p class="text-sm leading-relaxed mb-6">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas debitis temporibus at soluta voluptatum
-            perspiciatis,
-            itaque, nisi
-            repellat ducimus ex quasi nesciunt deserunt repellendus! Quasi veniam ipsum ducimus suscipit nemo!
+            Hope For All is a non-profit organization dedicated to transforming lives and building sustainable
+            communities across Nepal. Since 2024, we've been working on the ground to provide education, healthcare,
+            clean water, and economic opportunities to those who need it most.
           </p>
-
           <ul class="space-y-3 text-sm">
             <li class="flex gap-2">
-              <i class="fa-solid fa-location-dot mt-1 text-orange-500"></i>
-              Nepal
+              <i class="fa-solid fa-house mt-1 text-orange-500"></i>
+              <!-- <i class="fa-solid fa-location-dot mt-1 text-orange-500"></i> -->
+              Kathmandu, Nepal
             </li>
             <li class="flex gap-2">
-              <i class="fa-regular fa-envelope mt-1 text-white"></i>
-              HopeForAll@gmail.com
+              <i class="fa-regular fa-envelope mt-1 text-orange-500"></i>
+              info@hopeforall.org.np
             </li>
             <li class="flex gap-2">
-              <i class="fa-solid fa-phone mt-1 "></i>
-              Call Us: +977-987654321
+              <i class="fa-solid fa-phone mt-1 text-orange-500"></i>
+              +977-98-765-4321
+            </li>
+            <li class="flex gap-2">
+              <i class="fa-solid fa-clock mt-1 text-orange-500"></i>
+              Mon-Fri: 10AM-6PM
             </li>
           </ul>
         </div>
@@ -1175,119 +1234,112 @@
           <h3 class="text-white font-semibold mb-4">WHAT WE DO</h3>
           <ul class="space-y-3 text-sm">
             <li class="border-b border-white/10 pb-2">
-              <a href="education.html">
-                Education
+              <a href="education.html" class="hover:text-orange-400 transition">
+                Education & Scholarships
               </a>
             </li>
             <li class="border-b border-white/10 pb-2">
-              <a href="health.html">Health</a>
+              <a href="health.html" class="hover:text-orange-400 transition">Healthcare & Medical Camps</a>
             </li>
             <li class="border-b border-white/10 pb-2">
-              <a href="Services.html"></a>Services
+              <a href="services.html" class="hover:text-orange-400 transition">Community Services</a>
             </li>
             <li class="border-b border-white/10 pb-2">
-              <a href="microfinance.html">Microfinance</a>
+              <a href="microfinance.html" class="hover:text-orange-400 transition">Women's Microfinance</a>
             </li>
             <li class="border-b border-white/10 pb-2">
-              <a href="infrastructure.html">
-              </a>Infrastructure
+              <a href="infrastructure.html" class="hover:text-orange-400 transition">
+                Clean Water & Infrastructure
+              </a>
             </li>
             <li>
-              <a href="emergencyresponse.html"></a>Emergency response
+              <a href="emergencyresponse.html" class="hover:text-orange-400 transition">Disaster Relief & Emergency
+                Response</a>
             </li>
-
           </ul>
         </div>
         <div>
-          <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+          <h3 class="text-white font-semibold mb-4">QUICK LINKS</h3>
           <ul class="space-y-3 text-sm">
             <li class="border-b border-white/10 pb-2">
-              <a href="Press Releases">Home</a>
+              <a href="/" class="hover:text-orange-400 transition">Home</a>
             </li>
-            <li class="border-b border-white/10 pb-2"><a href="Official Statements">About</a></li>
-            <li class="border-b border-white/10 pb-2"><a href="Features"></a>Events</li>
-            <li class="border-b border-white/10 pb-2"><a href="Blog & News">Gallery</a></li>
-            <li class="border-b border-white/10 pb-2"><a href="Blog & News">Blog & News</a></li>
-            <li><a href="PressContacts"></a>Press Contacts</li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="causes.html" class="hover:text-orange-400 transition">Our Causes</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="about.html" class="hover:text-orange-400 transition">About Us</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="events.html" class="hover:text-orange-400 transition">Events</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="news.html" class="hover:text-orange-400 transition">Blog & News</a>
+            </li>
+            <li class="border-b border-white/10 pb-2">
+              <a href="contactform.html" class="hover:text-orange-400 transition">Contact Us</a>
+            </li>
           </ul>
         </div>
-        <!-- <div>
-          <h3 class="text-white font-semibold mb-4">CALENDAR</h3>
-          <p class="text-sm text-white mb-3">December 2025</p>
-
-          <div class="border border-white/20 rounded-lg p-3 text-xs">
-            <div class="grid grid-cols-7 text-center font-semibold text-white mb-2">
-              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+        <div>
+          <h3 class="text-white font-semibold mb-4">STAY CONNECTED</h3>
+          <p class="text-gray-400 mb-4 text-sm">
+            Subscribe to our newsletter and be the first to know about our impact stories, upcoming projects, and
+            volunteer opportunities. Join our community of changemakers.
+          </p>
+          <form class="flex gap-2">
+            <input type="email" placeholder="Your email address" class="flex-1 px-3 py-3 bg-gray-800 rounded-md text-gray-300 
+              placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 border border-gray-700">
+            <button type="submit"
+               aria-label="Description" class="px-6 py-3 bg-orange-500 text-white rounded-md font-medium hover:bg-orange-600 transition-colors">
+              Subscribe
+            </button>
+          </form>
+          <div class="mt-6">
+            <p class="text-white text-sm mb-3">Follow Our Journey:</p>
+            <div class="flex gap-3">
+              <a href="https://www.facebook.com/" aria-label="Follow us on Facebook" class="hover:opacity-80">
+                <i class="fa-brands fa-facebook text-blue-500 text-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/" aria-label="Follow us on Instagram" class="hover:opacity-80">
+                <i class="fa-brands fa-instagram text-pink-500 text-lg"></i>
+              </a>
+              <a href="https://www.youtube.com/" aria-label="Follow us on YouTube" class="hover:opacity-80">
+                <i class="fa-brands fa-youtube text-red-600 text-lg"></i>
+              </a>
+              <a href="https://www.linkedin.com/" aria-label="Follow us on LinkedIn" class="hover:opacity-80">
+                <i class="fa-brands fa-linkedin text-blue-400 text-lg"></i>
+              </a>
+              <a href="https://twitter.com/" aria-label="Follow us on Twitter" class="hover:opacity-80">
+                <i class="fa-brands fa-twitter text-sky-400 text-lg"></i>
+              </a>
             </div>
-
-            <div class="grid grid-cols-7 gap-1 text-center">
-              <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
-              <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
-              <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
-              <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
-              <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="max-w-4xl mx-auto px-4 hover:border-2 hover:rounded-xl">
-          <div class="text-center mb-2">
-            <h2 class="text-lg font-bold uppercase mb-2 text-white">Contact Us</h2>
-          </div>
-          <div class="shadow rounded-lg p-2">
-            <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-2">
-
-              <input type="text" placeholder="Your Name" required
-                class="border border-gray-300 px-4 py-2 rounded-xl focus:outline-none focus:border-orange-500" />
-
-              <input type="email" placeholder="Your Email" required
-                class="border border-gray-300 px-4 py-2 rounded-xl focus:outline-none focus:border-orange-500" />
-
-              <input type="text" placeholder="Subject" required
-                class="md:col-span-2 border border-gray-300 px-4 py-2 rounded-xl focus:outline-none focus:border-orange-500" />
-
-              <textarea rows="4" placeholder="Your Message" required
-                class="md:col-span-2 border border-gray-300 px-4 py-2 rounded-xl focus:outline-none focus:border-orange-500 resize-none"></textarea>
-
-              <div class="md:col-span-2 text-center">
-                <button type="submit"
-                  class="bg-orange-500 text-white px-8 py-2 rounded-full font-semibold uppercase hover:bg-orange-600 transition">
-                  Send Message
-                </button>
-              </div>
-
-            </form>
-            <p id="successMsg" class="text-green-600 font-semibold text-center mt-4 hidden">
-              <i class="fa-solid fa-check"></i> Your message has been sent successfully!
-            </p>
           </div>
         </div>
-
       </div>
+
+
       <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-
-        <p class="text-sm">
-          Privacy Policy - Terms of use
-        <p class="copyright items-center justify-center">
-          © 2025 | All Rights Reserved
-        </p>
-        </p>
-
-        <div class="flex gap-4 text-lg">
-          <i class="fa-brands fa-linkedin text-blue-600 hover:text-blue-600 cursor-pointer"></i>
-          <i class="fa-brands fa-facebook text-blue-500 hover:text-blue-400 cursor-pointer"></i>
-          <i class="fa-brands fa-twitter text-blue-300 hover:text-blue-600 cursor-pointer"></i>
-          <i class="fa-brands fa-skype text-blue-600 hover:text-blue-800 cursor-pointer"></i>
+        <div class="text-sm text-center md:text-left">
+         
+          <p>
+            <a href="privacy-policy.html" class="hover:text-orange-400 transition mr-4">Privacy Policy</a>
+            <a href="terms.html" class="hover:text-orange-400 transition mr-4">Terms of Use</a>
+          </p>
         </div>
-
+        <div class="text-sm">
+          <p class="copyright">
+            © 2025 Hope For All Nepal. All Rights Reserved.
+          </p>
+        </div>
       </div>
-
     </div>
   </footer>
   <!-- Donation Modal -->
   <div id="donateModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
     <div class="bg-white rounded-xl w-full max-w-md p-6 relative animate-scaleIn">
-      <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-4xl">
+      <button id="closeModal"  aria-label="Description" 
+      class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-4xl">
         &times;
       </button>
       <!-- FORM -->
@@ -1303,8 +1355,10 @@
           <input type="number" placeholder="Donation Amount ($)" required
             class="w-full border rounded-md px-4 py-2 focus:ring-2 focus:ring-orange-500">
 
-          <button type="submit" class="donate-btn w-full bg-orange-500 text-white py-2 rounded-full font-semibold hover:bg-orange-600
-             transition">
+          <button type="submit" aria-label="Description"
+          class="donate-btn w-full bg-orange-500 text-white btn btn-primary px-6 py-2 
+          rounded-full font-semibold
+           hover:bg-orange-600 transition">
             Donate Now
           </button>
         </form>
@@ -1315,7 +1369,8 @@
         <p class="text-gray-600 mb-4">
           Your donation has been received successfully.
         </p>
-        <button id="closeSuccess" class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600">
+        <button id="closeSuccess"  aria-label="Description"
+         class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600">
           Close
         </button>
       </div>
@@ -1324,7 +1379,8 @@
   <!-- JOiin  now -->
   <div id="joinModal" class="fixed inset-0 bg-black/60 flex items-center justify-center hidden z-50">
     <div class="bg-white rounded-xl w-full max-w-md p-6 relative">
-      <button onclick="closeJoinForm()" class="absolute top-3 right-3 text-gray-500 hover:text-black">
+      <button onclick="closeJoinForm()"  aria-label="Description"
+       class="absolute top-3 right-3 text-gray-500 hover:text-black">
         <i class="fa-solid fa-xmark text-xl"></i>
       </button>
       <h2 class="text-2xl font-bold text-center mb-6 uppercase">
@@ -1342,7 +1398,9 @@
         <textarea rows="3" placeholder="Why do you want to join?"
           class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
 
-        <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded-full hover:bg-orange-700 transition">
+        <button type="submit"
+          aria-label="Description"
+           class="w-full bg-orange-600 text-white  btn btn-primary px-6 py-2 rounded-full hover:bg-orange-700 transition">
           Join Us
         </button>
       </form>
@@ -1352,7 +1410,8 @@
   <!-- Volunteer Modal -->
   <div id="volunteerModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4">
     <div class="bg-white w-full max-w-md rounded-xl shadow-lg relative p-6 font-poppins">
-      <button onclick="closeVolunteerForm()" class="absolute top-3 right-3 text-gray-400 hover:text-black">
+      <button onclick="closeVolunteerForm()"  aria-label="Description"
+       class="absolute top-3 right-3 text-gray-400 hover:text-black">
         <i class="fa-solid fa-xmark fa-lg"></i>
       </button>
       <h2 class="text-2xl font-bold text-center text-black-600 mb-4">
@@ -1369,7 +1428,9 @@
         <textarea rows="3" placeholder="Why do you want to volunteer?"
           class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
 
-        <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded-full hover:bg-orange-700 transition">
+        <button type="submit"
+          aria-label="Description"
+           class="w-full bg-orange-600 text-white  btn btn-secondary px-6 py-2 rounded-full hover:bg-orange-700 transition">
           Volunteer
         </button>
       </form>
@@ -1378,7 +1439,8 @@
   <!-- sponsors form -->
   <div id="sponsorModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4">
     <div class="bg-white w-full max-w-md rounded-xl shadow-lg relative p-6 font-poppins">
-      <button onclick="closeSponsorForm()" class="absolute top-3 right-3 text-gray-400 hover:text-black">
+      <button onclick="closeSponsorForm()"  aria-label="Description"
+       class="absolute top-3 right-3 text-gray-400 hover:text-black">
         <i class="fa-solid fa-xmark fa-lg"></i>
       </button>
       <h2 class="text-2xl font-bold text-center text-black-600 mb-4">
@@ -1395,8 +1457,10 @@
         <textarea rows="3" placeholder="Why do you want to sponsor for this org?" required
           class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
 
-        <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded-full hover:bg-orange-700 transition">
-          submit
+        <button type="submit"
+          aria-label="Description"
+           class="w-full bg-orange-600 text-white  btn btn-secondary px-6 py-2rounded-full hover:bg-orange-700 transition">
+          Submit
         </button>
       </form>
     </div>
